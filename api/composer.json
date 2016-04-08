@@ -1,0 +1,8 @@
+{
+    "require": {
+        "tufanbarisyildirim/php-apk-parser":"dev-master",
+        "pusher/pusher-php-server": "^2.2",
+        "katzgrau/klogger": "dev-master",
+        "rodneyrehm/plist": "^2.0"
+    }
+}

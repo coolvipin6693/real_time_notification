@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Social Cops</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body class="hide">
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Social Cops</a>
+				</div>
+		
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li id="guestList" class="hide"><a href="#">Welcome Guest</a></li>
+						<li class="dropdown hide" id="userList">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome <span id="userEmail">Guest</span> <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#" id="logoutBtn">Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+		
+		<div class="row">
+			<div id="notificationSection" class="container">
+				
+			</div>
+		</div>
+
+		<div id="loginSection" class="row hide">
+			<div class="container">
+				<div class="col-xs-6 col-xs-offset-3">
+					<div class="panel">
+						<div class="panel-heading">
+							<h1>Access Social Cops</h1>
+						</div>
+						<div class="panel-body">
+							<form method="POST" role="form" id="register" class="form-horizontal">
+								<div class="form-group">
+									<input type="email" class="form-control" id="emailInput" placeholder="Enter Email">
+								</div>								
+								<button type="button" class="btn btn-primary" id="registerBtn">Register</button>
+								<button type="button" class="btn btn-info" id="loginBtn">Login</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="loggedSection" class="row hide">
+			<div class="container">
+				<div class="col-xs-8 col-xs-offset-2">
+					<h1>List of Topics</h1>
+					<ul class="list-unstyled">
+						<li>
+							<div class="row">
+								<div class="col-xs-9">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat suscipit amet, est ex, soluta error dicta nostrum, incidunt omnis atque esse optio animi earum excepturi. Id molestias alias velit maxime, esse quae, rem sit asperiores, dolor quis consectetur est doloribus.
+								</div>
+								<div class="col-xs-3">
+									<button type="button" class="btn btn-primary answer" data-id="1">Answer</button>
+									<button type="button" class="btn btn-danger watch" data-id="1">Watch</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" tabindex="-1" role="dialog" id="answerModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<form method="POST" role="form" id="postAnswer" class="form-horizontal">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title">Post Answer</h4>
+						</div>
+						<div class="modal-body">
+							<div class="form-group" style="margin: 0">
+								<textarea name="answer" id="answerInput" rows="10" class="form-control"></textarea>
+							</div>								
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary" id="postAnswerBtn">Post Answer</button>
+						</div>
+					</form>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->		
+
+		<!-- jQuery -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="./js/cookies.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				var user = Cookies.get('userEmail');
+				if( user != undefined && user != '') {
+					$('#userList').removeClass('hide');
+					$('#userEmail').html(user);
+					$('#loggedSection').removeClass('hide');
+				} else {
+					$('#guestList').removeClass('hide');
+					$('#loginSection').removeClass('hide');
+				}
+				$('body').removeClass('hide');
+			});
+
+			$(document).ready(function() {
+				$('#registerBtn').on('click', function(e) {
+					e.preventDefault();
+					userEmail = $('#emailInput').val();
+					Cookies.set('userEmail', userEmail);
+					location.reload();
+				});
+
+				$('#loginBtn').on('click', function(e) {
+					e.preventDefault();
+					userEmail = $('#emailInput').val();
+					Cookies.set('userEmail', userEmail);
+					location.reload();
+				});
+
+				$('#logoutBtn').on('click', function(e) {
+					e.preventDefault();
+					Cookies.remove('userEmail');
+					location.reload();
+				});
+
+				$('.watch').on('click', function(e){
+					e.preventDefault();
+					var id = $(this).attr('data-id');
+					var newHtml = '<div class="alert alert-info"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><strong>Volla!!!</strong> This question is successully added to watch list.</div>';
+					$('#notificationSection').append(newHtml);
+				});
+
+				$('.answer').on('click', function(e) {
+					e.preventDefault();
+					$('#answerModal').modal();
+				});
+
+				$('.postAnswerBtn').on('click', function(e) {
+					e.preventDefault();
+					$('#answerModal').modal('hide');
+				});
+			});
+
+			/* 
+			-----------------------------
+			ajax implemenataion  example 
+			-----------------------------
+			data object example : 
+			var data = {
+				'sex' : 'yes',
+				'times' : 'twice 2 day'
+			};
+			$.ajax({
+				type:'POST | GET', // enter methods
+				url: 'url', // url of api endpoint
+				data : 'datastring', // in case you need to send some data ( data needs to be a json object )
+				dataType : 'json',
+				// success callback
+				success : function(data){
+					console.log('success');
+				},
+				// error callback
+				error : function(jqXHR,textStatus,errorThrown){
+					console.log('Error');
+				}
+			});
+			*/
+		</script>
+	</body>
+</html>

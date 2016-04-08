@@ -1,0 +1,230 @@
+[ INFO  ][08 Apr 2016 2:27:02 AM Asia/Calcutta][Unknown][Line:35] Creating New User Entry 
+[ INFO  ][08 Apr 2016 2:31:02 AM Asia/Calcutta][Unknown][Line:35] Creating New User Entry 
+[ INFO  ][08 Apr 2016 2:36:29 AM Asia/Calcutta][Unknown][Line:35] Creating New User Entry 
+[ INFO  ][08 Apr 2016 12:15:35 PM Asia/Calcutta][Unknown][Line:35] Creating New User Entry 
+[ INFO  ][08 Apr 2016 12:15:35 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][08 Apr 2016 12:15:35 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][08 Apr 2016 12:15:35 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : test@gmail.com 
+[ INFO  ][08 Apr 2016 12:15:35 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][08 Apr 2016 12:15:35 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][08 Apr 2016 12:15:35 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][08 Apr 2016 12:15:35 PM Asia/Calcutta][Unknown][Line:44] User Created Successfully ! 
+[ INFO  ][08 Apr 2016 12:19:20 PM Asia/Calcutta][Unknown][Line:35] Creating New User Entry 
+[ INFO  ][08 Apr 2016 12:19:20 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][08 Apr 2016 12:19:20 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][08 Apr 2016 12:19:20 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : abc@test.com 
+[ INFO  ][08 Apr 2016 12:19:20 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][08 Apr 2016 12:19:20 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][08 Apr 2016 12:19:20 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][08 Apr 2016 12:19:20 PM Asia/Calcutta][Unknown][Line:44] User Created Successfully ! 
+[ INFO  ][08 Apr 2016 12:24:23 PM Asia/Calcutta][Unknown][Line:85] Creating New Question Entry 
+[ INFO  ][08 Apr 2016 12:24:23 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][08 Apr 2016 12:24:23 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][08 Apr 2016 12:24:23 PM Asia/Calcutta][Unknown][Line:86] Creating New Question for User ID : abc@test.com, Question : this is a test string, category : test 
+[ INFO  ][08 Apr 2016 12:24:23 PM Asia/Calcutta][Unknown][Line:91] Database Selected ---  
+[ INFO  ][08 Apr 2016 12:24:23 PM Asia/Calcutta][Unknown][Line:94] Collection Questions Selected Successfully 
+[ INFO  ][08 Apr 2016 12:24:23 PM Asia/Calcutta][Unknown][Line:109] New Documents inserted successfully into questions collection 
+[ INFO  ][08 Apr 2016 12:24:23 PM Asia/Calcutta][Unknown][Line:94] Question Added Successfully ! 
+[ INFO  ][08 Apr 2016 12:31:35 PM Asia/Calcutta][Unknown][Line:35] Creating New User Entry 
+[ INFO  ][08 Apr 2016 12:31:35 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][08 Apr 2016 12:31:35 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][08 Apr 2016 12:31:35 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : def@test.com 
+[ INFO  ][08 Apr 2016 12:31:35 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][08 Apr 2016 12:31:35 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][08 Apr 2016 12:31:35 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][08 Apr 2016 12:31:35 PM Asia/Calcutta][Unknown][Line:44] User Created Successfully ! 
+[ INFO  ][08 Apr 2016 12:36:18 PM Asia/Calcutta][Unknown][Line:183] Getting All Questions List 
+[ INFO  ][08 Apr 2016 12:36:18 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][08 Apr 2016 12:36:18 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][08 Apr 2016 12:36:18 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : abc@test.com 
+[ INFO  ][08 Apr 2016 12:36:18 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][08 Apr 2016 12:36:18 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][08 Apr 2016 12:36:18 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][08 Apr 2016 12:36:18 PM Asia/Calcutta][Unknown][Line:192] User ID validated. Record Found ! 
+[ INFO  ][08 Apr 2016 12:36:18 PM Asia/Calcutta][Unknown][Line:118] Fetching Questions List 
+[ INFO  ][08 Apr 2016 12:36:18 PM Asia/Calcutta][Unknown][Line:122] Database Selected ---  
+[ INFO  ][08 Apr 2016 12:36:18 PM Asia/Calcutta][Unknown][Line:125] Collection Questions Selected Successfully 
+[ INFO  ][08 Apr 2016 12:36:18 PM Asia/Calcutta][Unknown][Line:146] Exception occured in getting Questions List : exception 'ErrorException' with message 'Undefined index: question_string' in /var/www/html/gossip/controllers/QuestionController.php:132
+Stack trace:
+#0 /var/www/html/gossip/controllers/QuestionController.php(132): Slim\Slim::handleErrors(8, 'Undefined index...', '/var/www/html/g...', 132, Array)
+#1 /var/www/html/gossip/index.php(208): QuestionController->get_question_list(Object(MongoClient), 'abc@test.com')
+#2 [internal function]: {closure}()
+#3 /var/www/html/gossip/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#4 /var/www/html/gossip/Slim/Slim.php(1357): Slim\Route->dispatch()
+#5 /var/www/html/gossip/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#6 /var/www/html/gossip/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 /var/www/html/gossip/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 /var/www/html/gossip/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#9 /var/www/html/gossip/index.php(333): Slim\Slim->run()
+#10 {main} 
+[ INFO  ][08 Apr 2016 12:36:18 PM Asia/Calcutta][Unknown][Line:217] Error in Getting Questions List 
+[ INFO  ][08 Apr 2016 12:37:22 PM Asia/Calcutta][Unknown][Line:183] Getting All Questions List 
+[ INFO  ][08 Apr 2016 12:37:22 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][08 Apr 2016 12:37:22 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][08 Apr 2016 12:37:22 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : abc@test.com 
+[ INFO  ][08 Apr 2016 12:37:22 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][08 Apr 2016 12:37:22 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][08 Apr 2016 12:37:22 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][08 Apr 2016 12:37:22 PM Asia/Calcutta][Unknown][Line:192] User ID validated. Record Found ! 
+[ INFO  ][08 Apr 2016 12:37:22 PM Asia/Calcutta][Unknown][Line:118] Fetching Questions List 
+[ INFO  ][08 Apr 2016 12:37:22 PM Asia/Calcutta][Unknown][Line:122] Database Selected ---  
+[ INFO  ][08 Apr 2016 12:37:22 PM Asia/Calcutta][Unknown][Line:125] Collection Questions Selected Successfully 
+[ INFO  ][08 Apr 2016 12:37:22 PM Asia/Calcutta][Unknown][Line:211] Got all questions ! 
+[ INFO  ][08 Apr 2016 12:38:44 PM Asia/Calcutta][Unknown][Line:183] Getting All Questions List 
+[ INFO  ][08 Apr 2016 12:38:44 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][08 Apr 2016 12:38:44 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][08 Apr 2016 12:38:44 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : abc@test.com 
+[ INFO  ][08 Apr 2016 12:38:44 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][08 Apr 2016 12:38:44 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][08 Apr 2016 12:38:44 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][08 Apr 2016 12:38:44 PM Asia/Calcutta][Unknown][Line:192] User ID validated. Record Found ! 
+[ INFO  ][08 Apr 2016 12:38:44 PM Asia/Calcutta][Unknown][Line:118] Fetching Questions List 
+[ INFO  ][08 Apr 2016 12:38:44 PM Asia/Calcutta][Unknown][Line:122] Database Selected ---  
+[ INFO  ][08 Apr 2016 12:38:44 PM Asia/Calcutta][Unknown][Line:125] Collection Questions Selected Successfully 
+[ INFO  ][08 Apr 2016 12:38:44 PM Asia/Calcutta][Unknown][Line:211] Got all questions ! 
+[ INFO  ][08 Apr 2016 12:42:10 PM Asia/Calcutta][Unknown][Line:134] Adding new watcher to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 12:42:10 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][08 Apr 2016 12:42:10 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][08 Apr 2016 12:42:10 PM Asia/Calcutta][Unknown][Line:17] Adding User ID : def@test.com to list of watchers for question id : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 12:42:10 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][08 Apr 2016 12:42:10 PM Asia/Calcutta][Unknown][Line:24] Collection Questions Selected Successfully 
+[ INFO  ][08 Apr 2016 12:42:10 PM Asia/Calcutta][Unknown][Line:27] New Watcher added successfully to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:22:36 PM Asia/Calcutta][Unknown][Line:134] Adding new watcher to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:22:36 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][08 Apr 2016 1:22:36 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][08 Apr 2016 1:22:36 PM Asia/Calcutta][Unknown][Line:17] Adding User ID : def@test.com to list of watchers for question id : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:22:36 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][08 Apr 2016 1:22:36 PM Asia/Calcutta][Unknown][Line:24] Collection Questions Selected Successfully 
+[ INFO  ][08 Apr 2016 1:22:36 PM Asia/Calcutta][Unknown][Line:27] New Watcher added successfully to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:44:17 PM Asia/Calcutta][Unknown][Line:134] Adding new watcher to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:44:17 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][08 Apr 2016 1:44:17 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][08 Apr 2016 1:44:17 PM Asia/Calcutta][Unknown][Line:17] Adding User ID : def@test.com to list of watchers for question id : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:44:17 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][08 Apr 2016 1:44:17 PM Asia/Calcutta][Unknown][Line:24] Collection Questions Selected Successfully 
+[ INFO  ][08 Apr 2016 1:44:17 PM Asia/Calcutta][Unknown][Line:27] New Watcher added successfully to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:44:17 PM Asia/Calcutta][Unknown][Line:162] Sending Pusher Notification 
+[ INFO  ][08 Apr 2016 1:46:06 PM Asia/Calcutta][Unknown][Line:134] Adding new watcher to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:46:06 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][08 Apr 2016 1:46:06 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][08 Apr 2016 1:46:06 PM Asia/Calcutta][Unknown][Line:18] Adding User ID : def@test.com to list of watchers for question id : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:46:06 PM Asia/Calcutta][Unknown][Line:22] Database Selected ---  
+[ INFO  ][08 Apr 2016 1:46:06 PM Asia/Calcutta][Unknown][Line:25] Collection Questions Selected Successfully 
+[ INFO  ][08 Apr 2016 1:46:06 PM Asia/Calcutta][Unknown][Line:28] New Watcher added successfully to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:46:06 PM Asia/Calcutta][Unknown][Line:163] Sending Pusher Notification 
+[ INFO  ][08 Apr 2016 1:46:06 PM Asia/Calcutta][Unknown][Line:180] Error Occured in Sending Pusher Notificationexception 'ErrorException' with message 'Illegal string offset 'message'' in /var/www/html/gossip/controllers/QuestionController.php:176
+Stack trace:
+#0 /var/www/html/gossip/controllers/QuestionController.php(176): Slim\Slim::handleErrors(2, 'Illegal string ...', '/var/www/html/g...', 176, Array)
+#1 /var/www/html/gossip/controllers/QuestionController.php(31): QuestionController->triggerPusherNotification('5707559fed06b74...', 'NEW_WATCHER', 'def@test.com')
+#2 /var/www/html/gossip/index.php(140): QuestionController->watch_question(Object(MongoClient), 'def@test.com', '5707559fed06b74...')
+#3 [internal function]: {closure}()
+#4 /var/www/html/gossip/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 /var/www/html/gossip/Slim/Slim.php(1357): Slim\Route->dispatch()
+#6 /var/www/html/gossip/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /var/www/html/gossip/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /var/www/html/gossip/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 /var/www/html/gossip/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 /var/www/html/gossip/index.php(333): Slim\Slim->run()
+#11 {main} 
+[ INFO  ][08 Apr 2016 1:48:28 PM Asia/Calcutta][Unknown][Line:134] Adding new watcher to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:48:28 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][08 Apr 2016 1:48:28 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][08 Apr 2016 1:48:28 PM Asia/Calcutta][Unknown][Line:18] Adding User ID : def@test.com to list of watchers for question id : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:48:28 PM Asia/Calcutta][Unknown][Line:22] Database Selected ---  
+[ INFO  ][08 Apr 2016 1:48:28 PM Asia/Calcutta][Unknown][Line:25] Collection Questions Selected Successfully 
+[ INFO  ][08 Apr 2016 1:48:28 PM Asia/Calcutta][Unknown][Line:28] New Watcher added successfully to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:48:28 PM Asia/Calcutta][Unknown][Line:163] Sending Pusher Notification 
+[ INFO  ][08 Apr 2016 1:48:28 PM Asia/Calcutta][Unknown][Line:180] Error Occured in Sending Pusher Notificationexception 'ErrorException' with message 'Illegal string offset 'message'' in /var/www/html/gossip/controllers/QuestionController.php:176
+Stack trace:
+#0 /var/www/html/gossip/controllers/QuestionController.php(176): Slim\Slim::handleErrors(2, 'Illegal string ...', '/var/www/html/g...', 176, Array)
+#1 /var/www/html/gossip/controllers/QuestionController.php(31): QuestionController->triggerPusherNotification('5707559fed06b74...', 'NEW_WATCHER', 'def@test.com')
+#2 /var/www/html/gossip/index.php(140): QuestionController->watch_question(Object(MongoClient), 'def@test.com', '5707559fed06b74...')
+#3 [internal function]: {closure}()
+#4 /var/www/html/gossip/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 /var/www/html/gossip/Slim/Slim.php(1357): Slim\Route->dispatch()
+#6 /var/www/html/gossip/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /var/www/html/gossip/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /var/www/html/gossip/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 /var/www/html/gossip/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 /var/www/html/gossip/index.php(333): Slim\Slim->run()
+#11 {main} 
+[ INFO  ][08 Apr 2016 1:48:28 PM Asia/Calcutta][Unknown][Line:143] Watcher Added Successfully ! 
+[ INFO  ][08 Apr 2016 1:51:58 PM Asia/Calcutta][Unknown][Line:134] Adding new watcher to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:51:58 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][08 Apr 2016 1:51:58 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][08 Apr 2016 1:51:58 PM Asia/Calcutta][Unknown][Line:18] Adding User ID : def@test.com to list of watchers for question id : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:51:58 PM Asia/Calcutta][Unknown][Line:22] Database Selected ---  
+[ INFO  ][08 Apr 2016 1:51:58 PM Asia/Calcutta][Unknown][Line:25] Collection Questions Selected Successfully 
+[ INFO  ][08 Apr 2016 1:51:58 PM Asia/Calcutta][Unknown][Line:28] New Watcher added successfully to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:51:58 PM Asia/Calcutta][Unknown][Line:163] Sending Pusher Notification 
+[ INFO  ][08 Apr 2016 1:51:58 PM Asia/Calcutta][Unknown][Line:180] Error Occured in Sending Pusher Notificationexception 'ErrorException' with message 'Illegal string offset 'message'' in /var/www/html/gossip/controllers/QuestionController.php:176
+Stack trace:
+#0 /var/www/html/gossip/controllers/QuestionController.php(176): Slim\Slim::handleErrors(2, 'Illegal string ...', '/var/www/html/g...', 176, Array)
+#1 /var/www/html/gossip/controllers/QuestionController.php(31): QuestionController->triggerPusherNotification('5707559fed06b74...', 'NEW_WATCHER', 'def@test.com')
+#2 /var/www/html/gossip/index.php(140): QuestionController->watch_question(Object(MongoClient), 'def@test.com', '5707559fed06b74...')
+#3 [internal function]: {closure}()
+#4 /var/www/html/gossip/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 /var/www/html/gossip/Slim/Slim.php(1357): Slim\Route->dispatch()
+#6 /var/www/html/gossip/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /var/www/html/gossip/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /var/www/html/gossip/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 /var/www/html/gossip/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 /var/www/html/gossip/index.php(333): Slim\Slim->run()
+#11 {main} 
+[ INFO  ][08 Apr 2016 1:51:58 PM Asia/Calcutta][Unknown][Line:143] Watcher Added Successfully ! 
+[ INFO  ][08 Apr 2016 1:55:56 PM Asia/Calcutta][Unknown][Line:134] Adding new watcher to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:55:56 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][08 Apr 2016 1:55:56 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][08 Apr 2016 1:55:56 PM Asia/Calcutta][Unknown][Line:18] Adding User ID : def@test.com to list of watchers for question id : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:55:56 PM Asia/Calcutta][Unknown][Line:22] Database Selected ---  
+[ INFO  ][08 Apr 2016 1:55:56 PM Asia/Calcutta][Unknown][Line:25] Collection Questions Selected Successfully 
+[ INFO  ][08 Apr 2016 1:55:56 PM Asia/Calcutta][Unknown][Line:28] New Watcher added successfully to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:55:56 PM Asia/Calcutta][Unknown][Line:163] Sending Pusher Notification 
+[ INFO  ][08 Apr 2016 1:55:56 PM Asia/Calcutta][Unknown][Line:180] Error Occured in Sending Pusher Notificationexception 'ErrorException' with message 'Undefined variable: data' in /var/www/html/gossip/controllers/QuestionController.php:175
+Stack trace:
+#0 /var/www/html/gossip/controllers/QuestionController.php(175): Slim\Slim::handleErrors(8, 'Undefined varia...', '/var/www/html/g...', 175, Array)
+#1 /var/www/html/gossip/controllers/QuestionController.php(31): QuestionController->triggerPusherNotification('5707559fed06b74...', 'NEW_WATCHER', 'def@test.com')
+#2 /var/www/html/gossip/index.php(140): QuestionController->watch_question(Object(MongoClient), 'def@test.com', '5707559fed06b74...')
+#3 [internal function]: {closure}()
+#4 /var/www/html/gossip/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 /var/www/html/gossip/Slim/Slim.php(1357): Slim\Route->dispatch()
+#6 /var/www/html/gossip/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /var/www/html/gossip/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /var/www/html/gossip/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 /var/www/html/gossip/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 /var/www/html/gossip/index.php(333): Slim\Slim->run()
+#11 {main} 
+[ INFO  ][08 Apr 2016 1:55:56 PM Asia/Calcutta][Unknown][Line:143] Watcher Added Successfully ! 
+[ INFO  ][08 Apr 2016 1:56:33 PM Asia/Calcutta][Unknown][Line:134] Adding new watcher to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:56:33 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][08 Apr 2016 1:56:33 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][08 Apr 2016 1:56:33 PM Asia/Calcutta][Unknown][Line:18] Adding User ID : def@test.com to list of watchers for question id : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:56:33 PM Asia/Calcutta][Unknown][Line:22] Database Selected ---  
+[ INFO  ][08 Apr 2016 1:56:33 PM Asia/Calcutta][Unknown][Line:25] Collection Questions Selected Successfully 
+[ INFO  ][08 Apr 2016 1:56:33 PM Asia/Calcutta][Unknown][Line:28] New Watcher added successfully to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:56:33 PM Asia/Calcutta][Unknown][Line:163] Sending Pusher Notification 
+[ INFO  ][08 Apr 2016 1:56:34 PM Asia/Calcutta][Unknown][Line:143] Watcher Added Successfully ! 
+[ INFO  ][08 Apr 2016 1:58:23 PM Asia/Calcutta][Unknown][Line:134] Adding new watcher to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:58:23 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][08 Apr 2016 1:58:23 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][08 Apr 2016 1:58:23 PM Asia/Calcutta][Unknown][Line:18] Adding User ID : def@test.com to list of watchers for question id : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:58:23 PM Asia/Calcutta][Unknown][Line:22] Database Selected ---  
+[ INFO  ][08 Apr 2016 1:58:23 PM Asia/Calcutta][Unknown][Line:25] Collection Questions Selected Successfully 
+[ INFO  ][08 Apr 2016 1:58:23 PM Asia/Calcutta][Unknown][Line:28] New Watcher added successfully to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 1:58:23 PM Asia/Calcutta][Unknown][Line:163] Sending Pusher Notification 
+[ INFO  ][08 Apr 2016 1:58:23 PM Asia/Calcutta][Unknown][Line:143] Watcher Added Successfully ! 
+[ INFO  ][08 Apr 2016 2:08:51 PM Asia/Calcutta][Unknown][Line:134] Adding new watcher to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 2:08:51 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][08 Apr 2016 2:08:51 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][08 Apr 2016 2:08:51 PM Asia/Calcutta][Unknown][Line:18] Adding User ID : def@test.com to list of watchers for question id : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 2:08:51 PM Asia/Calcutta][Unknown][Line:22] Database Selected ---  
+[ INFO  ][08 Apr 2016 2:08:51 PM Asia/Calcutta][Unknown][Line:25] Collection Questions Selected Successfully 
+[ INFO  ][08 Apr 2016 2:09:44 PM Asia/Calcutta][Unknown][Line:134] Adding new watcher to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 2:09:44 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][08 Apr 2016 2:09:44 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][08 Apr 2016 2:09:44 PM Asia/Calcutta][Unknown][Line:18] Adding User ID : def@test.com to list of watchers for question id : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 2:09:44 PM Asia/Calcutta][Unknown][Line:22] Database Selected ---  
+[ INFO  ][08 Apr 2016 2:09:44 PM Asia/Calcutta][Unknown][Line:25] Collection Questions Selected Successfully 
+[ INFO  ][08 Apr 2016 2:09:44 PM Asia/Calcutta][Unknown][Line:28] New Watcher added successfully to question : 5707559fed06b74c0c8b4567 
+[ INFO  ][08 Apr 2016 2:09:44 PM Asia/Calcutta][Unknown][Line:163] Sending Pusher Notification 
+[ INFO  ][08 Apr 2016 2:09:45 PM Asia/Calcutta][Unknown][Line:143] Watcher Added Successfully ! 

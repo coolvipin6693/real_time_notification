@@ -1,0 +1,897 @@
+<?php
+
+	header("Access-Control-Allow-Origin: *");
+	header("Access-Control-Allow-Methods: POST, GET");
+
+	require 'Slim/Slim.php';
+	require_once 'KLogger.php';
+	
+	include 'db_scripts/db_connect.php';
+
+	include 'controllers/DeviceController.php';
+	include 'controllers/UploadedFileController.php';
+  	include 'controllers/DeviceSetupController.php';
+  	include 'controllers/ClientDataController.php';
+	include 'controllers/ZAP_Controller.php';
+	include 'controllers/UserSessionController.php';
+	include 'controllers/vnc_controller.php';
+
+
+	\Slim\Slim::registerAutoloader();
+	$app = new \Slim\Slim();
+
+
+	$app->get('/diy/start/', function(){
+
+		if( isset($_GET['app_upload_id']) && isset($_GET['access_token']) ) {
+			$app_upload_id = $_GET['app_upload_id'];
+			$access_token = $_GET['access_token'];
+		}
+		else{
+			$responseObj = array('status' => false,
+    			   'message' => "Insufficient Parameters"
+    			);
+			echo json_encode($responseObj);
+			exit();
+		}
+
+		$log = KLogger::logger();
+		$log->info("Start DIY");
+
+		$userSessionObject = new UserController();
+
+		if( $userSessionObject->validate_access_token( $access_token ) ){
+			$log->info("Access Token Validated...");
+		}
+		else{
+			$log->info("Could Not Validate Access Token...");			
+
+			$responseObj = array('status' => false,
+				   'message' => 'Could Not Validate Access Token'
+				);
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+
+			exit();	
+		}
+
+		$deviceControllerObject = new DeviceManager();
+
+		$dbConnectionObject = new DBconnect();
+		$DBConnection = $dbConnectionObject->ConnectToDB();
+
+		$apkUploadObject = new UploadFileInfo();
+		$uploadInfo = $apkUploadObject->GetUploadedFileInfo($DBConnection, $app_upload_id);
+		
+		if( $uploadInfo['status'] ){
+			$user_id = $uploadInfo['user_id'];
+		}
+		else{
+			$log->info("Record not found for given upload ID : ".$app_upload_id);
+
+			$responseObj = array('status' => false,
+				   'message' => 'Invalid Upload ID'
+				);
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+			exit();		
+		}
+
+		$uploadedAppHasBookingForToday = $deviceControllerObject->uploadedAppHasScheduledBooking($DBConnection, $user_id, $app_upload_id );
+
+		if( $uploadedAppHasBookingForToday['status'] ){
+
+			$currentTime = time();
+			$minuteDiff = round( ( strtotime( $uploadedAppHasBookingForToday['message']['startTime'] ) - $currentTime )/60);
+
+			if ( ($minuteDiff < 0) && ($minuteDiff > -10) ){
+				$message = "Voila...You are losing time. Let's get started. Your booking time was ".$uploadedAppHasBookingForToday['message']['startTime'].". Your session will end at ".$uploadedAppHasBookingForToday['message']['endTime'];
+				$responseCode = Constants::LATE_WITHIN_TIME_LIMIT;
+
+				$responseObj = array('status' => $responseCode,
+					   'device_ip' => $uploadedAppHasBookingForToday['message']['deviceIP'],
+					   'message' => $message
+					);
+			}
+
+			elseif ($minuteDiff < -10) {
+				$message = "Oops...You have missed your booking which was scheduled at ".$uploadedAppHasBookingForToday['message']['startTime'].". Please Reschedule your Booking.";
+				$responseCode = Constants::TOO_LATE;
+
+				// Reduce the scheduled booking count for device by 1 and
+				$responseObj = array('status' => $responseCode,
+					   'message' => $message
+					);
+			}
+
+			elseif( ($minuteDiff > 0) && ($minuteDiff < 5) ){
+				$message = "Hey, Please wait for your scheduled booking time which is at ".$uploadedAppHasBookingForToday['message']['startTime'];
+				$responseCode = Constants::EARLY_WITHIN_LIMIT;
+
+				$responseObj = array('status' => $responseCode,
+					   'device_ip' => $uploadedAppHasBookingForToday['message']['deviceIP'],
+					   'message' => $message
+					);
+			}
+
+			elseif( $minuteDiff > 5 ){
+				$message = "Hey, You are a little too early. Your scheduled booking is at ".$uploadedAppHasBookingForToday['message']['startTime'].". Kindly come at your stipulated time";
+				$responseCode = Constants::TOO_EARLY;
+
+				$responseObj = array('status' => $responseCode,
+					   'message' => $message,
+					   'timeDiff' => $minuteDiff
+					);
+			}
+
+			// $deviceControllerObject->decrementDeviceBookingCount( $DBConnection, $uploadedAppHasBookingForToday['message']['deviceIP'] );			
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+
+		}
+		else{
+
+			$isDeviceAvailable = $deviceControllerObject->AssignDeviceToUser( $DBConnection );
+
+			if( $isDeviceAvailable['status'] ){
+				$deviceAssignedToUser = $isDeviceAvailable['validation'];
+				$devicePort = $isDeviceAvailable['port'];
+
+				$responseCode = Constants::DEVICE_AVAILABLE;
+
+				$responseObj = array('status' => $responseCode,
+					   'device_ip' => $deviceAssignedToUser,
+					   'port' => $devicePort
+					);
+
+			}
+			else{
+				// NO DEVICE IS AVAILABLE....SEND TIMESLOTS FOR BOOKING
+				$availableTimeslots = $deviceControllerObject->getAvailableTimeslots( $DBConnection );
+				$responseCode = Constants::DEVICE_NOT_AVAILABLE;
+
+				$responseObj = array('status' => $responseCode,
+					   'slots' => $availableTimeslots
+					);
+			}
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+		}
+
+	});
+
+	
+	$app->post('/diy/setupDevice/', function(){
+
+		$log = KLogger::logger();
+		$log->info("Setup Device URL");
+
+	// try{
+		$dbConnectionObject = new DBconnect();
+		$DBConnection = $dbConnectionObject->ConnectToDB();
+
+		if( isset($_POST['app_client_ip']) && isset($_POST['app_upload_id']) && isset($_POST['access_token']) ){
+			$appUploadID = $_POST['app_upload_id'];
+			$clientKey = $_POST['app_client_ip'];
+			$access_token = $_POST['access_token'];
+		}
+		else{
+			$responseObj = array('status' => false,
+    			   'message' => "Insufficient Parameters"
+    			);
+			echo json_encode($responseObj);
+			exit();
+		}
+
+		$log->info("found all params");
+
+		$userSessionObject = new UserController();
+
+		if( $userSessionObject->validate_access_token( $access_token ) ){
+			$log->info("Access Token Validated...");
+		}
+		else{
+			$log->info("Could Not Validate Access Token...");			
+
+			$responseObj = array('status' => false,
+				   'message' => 'Could Not Validate Access Token'
+				);
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+
+			exit();	
+		}
+
+		$log->info("validated access token...");
+
+		$apkUploadObject = new UploadFileInfo();
+		$uploadInfo = $apkUploadObject->GetUploadedFileInfo($DBConnection, $appUploadID);
+
+		if( $uploadInfo['status'] ){
+			$user_id = $uploadInfo['user_id'];
+		}
+		else{
+			$log->info("Record not found for given upload ID : ".$appUploadID);
+
+			$responseObj = array('status' => false,
+				   'message' => 'Invalid Upload ID'
+				);
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+
+			exit();			
+		}
+
+		$log->info("found apk info");
+
+		// create entry in DeviceSetupStatus Table 
+		$deviceControllerObject = new DeviceManager();
+		$device_setup_record_id = $deviceControllerObject->NewDeviceSetup($DBConnection, $appUploadID , $clientKey, $user_id);
+
+		if( $device_setup_record_id == false ){
+			$responseObj = array('status' => false,
+    			   'validation' => "Could Not Setup Device. Please try again..."
+    			);
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+			exit();
+		}
+
+		$log->info("created entry in device setup stattus table");
+
+		// create new diy session record
+		$new_session_Record_response = $deviceControllerObject->createDIYsessionStatus($DBConnection, $clientKey, $appUploadID, $user_id);
+		if( $new_session_Record_response ){
+			$log->info("New DIY Session created successfully for upload_id : ".$appUploadID);
+		}
+		else{
+			$responseObj = array('status' => false,
+    			   'validation' => "Could Not create new record..."
+    			);
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+			exit();
+		}
+
+		$log->info("created new DIY session record");
+
+		if( $uploadInfo['status'] ){
+			$res = explode('/', $uploadInfo['filePath']);
+
+			$bucketName = $res[2];
+			$apkName = $res[sizeof($res) - 1];  // The last element contains the name of the uploaded apk
+			
+			for ($i = 0; $i < 3; $i++){
+				unset($res[$i]);
+			}
+			$new_arr = array_values($res);
+
+			$filePathInBucket = implode("/", $new_arr);
+		}
+		else{
+			$responseObj = array('status' => false	);
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+		}
+
+		$log->info("downloading file from AWS");
+
+		// append upload id to apk file name
+		$name = explode('.', $apkName);
+		$apk_file_name = $name[0].'_'.$appUploadID.'.apk';
+
+		$AWSbucketName = $bucketName; // AWS Bucket name where the apk has been uploaded
+		$AWSkeyName = $filePathInBucket; // uploaded apk name 
+		$localFileSavePath = 'test_apps/'.$apk_file_name; // path where to save the file locally
+
+
+		$fileDownloadedFromAWS = fetchFileFromAWS($AWSbucketName, $AWSkeyName, $localFileSavePath);
+		// $fileDownloadedFromAWS = true;
+
+		$log->info("Changing VNC Password");
+		$vnc_object = new VNC();
+		$vnc_password_setup = $vnc_object->changeVNCpassword( $clientKey );
+		
+		if( $vnc_password_setup['status'] ){
+			$vnc_password_setup_status = $deviceControllerObject->UpdateDeviceVNCconfig( $DBConnection, $clientKey, $vnc_password_setup['password'] );
+		}
+		else{
+			$responseObj = array('status' => false,
+    			   'message' => "Could Not Reset VNC Config"
+    			);
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+			exit();
+		}		
+
+		if( $fileDownloadedFromAWS  && $vnc_password_setup_status ){
+
+			$log->info("Installing the App on device");
+			$appInstalledOnDevice = installAPKonDevice($localFileSavePath, $clientKey, $apk_file_name, $appUploadID);
+		}
+		else{
+
+			$responseObj = array('status' => false,
+    			   'message' => "Could not download file from AWS... / Could Not Reset VNC Config"
+    			);
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+			exit();
+		}
+
+		if( $appInstalledOnDevice ){
+			//update status in DIY session record
+			try{
+				$deviceControllerObject->setDIYsessionStatus($DBConnection, Constants::DIY_SESSION_APP_INSTALLED, $clientKey, $appUploadID, $user_id);	
+			}catch(Exception $e){
+				$log->info("Error updating diy session status...");				
+			}
+
+			// mark the device engagement status as TRUE
+			$deviceControllerObject->UpdateDeviceEngagementStatus($DBConnection, $clientKey, true);
+
+			//Start ZAP session with push enabled as true
+			$ZAPObject = new ZAPController();
+			$ZAPObject->StartNewSession($clientKey);
+
+			// signal that the device setup is now complete
+			$deviceControllerObject->UpdateDeviceSetupStatus($DBConnection, $device_setup_record_id);
+
+			// start sending data to pusher client
+			
+			try{
+				$deviceControllerObject->setDIYsessionStatus($DBConnection, Constants::DIY_SESSION_STARTED, $clientKey, $appUploadID, $user_id);	
+			}catch(Exception $e){
+				$log->info("Error updating diy session status...");				
+			}
+
+			$sendDataToClientObject = new SendDataToClient($clientKey);
+			$sendDataToClientObject->SendClientDataFunction($clientKey, $DBConnection);
+		}
+		else{
+			$responseObj = array('status' => false,
+    			   'message' => "Could not Setup Device. Please try again later..."
+    			);
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+		}
+
+	// }
+	// catch(Exception $e){
+	// 	echo $e->getMessage();
+	// }
+
+
+	});
+
+
+
+	$app->post('/diy/bookSession/', function(){
+
+		if(isset($_POST['app_upload_id']) && isset($_POST['slot']) && isset($_POST['access_token']) ){
+			
+			$app_upload_id = $_POST['app_upload_id'];
+			$slot = $_POST['slot'];
+			$access_token = $_POST['access_token'];
+		}
+		else{
+			$responseObj = array('status' => false,
+    			   'message' => "Insufficient Parameters"
+    			);
+			echo json_encode($responseObj);
+			exit();
+		}
+
+		$userSessionObject = new UserController();
+
+		if( $userSessionObject->validate_access_token( $access_token ) ){
+			$log->info("Access Token Validated...");
+		}
+		else{
+			$log->info("Could Not Validate Access Token...");			
+
+			$responseObj = array('status' => false,
+				   'message' => 'Could Not Validate Access Token'
+				);
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+
+			exit();	
+		}
+
+		$deviceControllerObject = new DeviceManager();
+		$dbConnectionObject = new DBconnect();
+		$DBConnection = $dbConnectionObject->ConnectToDB();
+
+		$apkUploadObject = new UploadFileInfo();
+		$uploadInfo = $apkUploadObject->GetUploadedFileInfo($DBConnection, $app_upload_id);
+
+		if( $uploadInfo['status'] ){
+			$user_id = $uploadInfo['user_id'];
+		}
+		else{
+			$log->info("Record not found for given upload ID : ".$app_upload_id);
+
+			$responseObj = array('status' => false,
+				   'message' => 'Invalid Upload ID'
+				);
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+
+			exit();			
+		}
+
+		$response = $deviceControllerObject->ScheduleDeviceSession($DBConnection, $app_upload_id, $user_id , $slot);
+
+		if( $response['status'] ){
+			
+			$responseObj = array('status' => true,
+		   		'booking_id' => $response['validation'],
+		   		'start_time' => $response['start_time']
+			);
+
+		}
+		else{
+
+			$responseObj = array('status' => false,
+		   		'slots' => $response['validation'],
+		   		'message' => $response['message']
+			);
+
+		}
+
+		$responseObj = json_encode($responseObj);
+		echo $responseObj;
+
+	});
+
+
+
+	$app->post('/diy/checkSetupStatus/', function(){
+
+		if(isset($_POST['app_upload_id']) && isset($_POST['app_client_ip']) && isset($_POST['access_token']) ){
+			
+			$app_upload_id = $_POST['app_upload_id'];
+			$clientKey = $_POST['app_client_ip'];
+			$access_token = $_POST['access_token'];
+
+		}
+		else{
+			$responseObj = array('status' => false,
+    			   'message' => "Insufficient Parameters"
+    			);
+			echo json_encode($responseObj);
+			exit();
+		}
+
+		$userSessionObject = new UserController();
+
+		if( $userSessionObject->validate_access_token( $access_token ) ){
+			$log->info("Access Token Validated...");
+		}
+		else{
+			$log->info("Could Not Validate Access Token...");			
+
+			$responseObj = array('status' => false,
+				   'message' => 'Could Not Validate Access Token'
+				);
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+
+			exit();	
+		}
+
+		$dbConnectionObject = new DBconnect();
+		$DBConnection = $dbConnectionObject->ConnectToDB();
+
+		$deviceControllerObject = new DeviceManager($clientKey);
+		$isDeviceReady = $deviceControllerObject->getDeviceSetupStatus($DBConnection, $app_upload_id);
+
+		if ( $isDeviceReady ){
+			$responseObj = array('status' => true );
+		}
+		else{
+			$responseObj = array('status' => true );
+		}
+
+		echo json_encode($responseObj);
+	});
+
+
+
+
+	$app->post('/diy/virtualDevice/', function(){
+
+		if(isset($_POST['app_client_ip']) && isset($_POST['access_token']) ){
+			$deviceIp = $_POST['app_client_ip'];
+			$access_token = $_POST['access_token'];
+		}
+		else{
+			$responseObj = array('status' => false,
+    			   'message' => "Insufficient Parameters"
+    			);
+			echo json_encode($responseObj);
+			exit();
+		}
+
+		$userSessionObject = new UserController();
+
+		if( $userSessionObject->validate_access_token( $access_token ) ){
+			$log->info("Access Token Validated...");
+		}
+		else{
+			$log->info("Could Not Validate Access Token...");			
+
+			$responseObj = array('status' => false,
+				   'message' => 'Could Not Validate Access Token'
+				);
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+
+			exit();	
+		}
+
+		$deviceControllerObject = new DeviceManager();
+		
+		$dbConnectionObject = new DBconnect();
+		$DBConnection = $dbConnectionObject->ConnectToDB();
+
+		$response = $deviceControllerObject->getDeviceInfo( $DBConnection, $deviceIp );
+
+		// $device_vnc_password = GetDeviceVNCconfig( $connection, $deviceIp );
+
+		if( $response['status'] ){
+			$responseObj = array('status' => true,
+		   		'port' => $response['message']['port'],
+		   		'password' => $response['message']['vnc_password']
+			);
+		}
+		else{
+
+			$responseObj = array('status' => false,
+		   		'message' => $response['message']
+			);
+		}
+
+		$responseObj = json_encode($responseObj);
+		echo $responseObj;
+
+	});
+
+
+
+
+	$app->post('/diy/createFlow/', function(){
+
+		if(isset($_POST['app_client_ip']) && isset($_POST['name']) && isset($_POST['access_token']) ){
+			$clientKey = $_POST['app_client_ip'];
+			$flowName = $_POST['name'];
+			$access_token = $_POST['access_token'];
+		}
+		else{
+			$responseObj = array('status' => false,
+    			   'message' => "Insufficient Parameters"
+    			);
+			echo json_encode($responseObj);
+			exit();
+		}
+
+		$userSessionObject = new UserController();
+
+		if( $userSessionObject->validate_access_token( $access_token ) ){
+			$log->info("Access Token Validated...");
+		}
+		else{
+			$log->info("Could Not Validate Access Token...");			
+
+			$responseObj = array('status' => false,
+				   'message' => 'Could Not Validate Access Token'
+				);
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+
+			exit();	
+		}
+
+		$ZAPObject = new ZAPController();
+		$ZAPObject->AddNewFlow($clientKey, $flowName);
+
+		$responseObj = array('status' => true );
+		echo json_encode($responseObj);
+	});
+
+
+
+
+	$app->post('/diy/endSession/', function(){
+
+		if(isset($_POST['app_client_ip']) && isset($_POST['urls']) ){
+			$clientKey = $_POST['app_client_ip'];
+			$ScanURLIds = $_POST['urls'];
+		}
+		else{
+			$responseObj = array('status' => false,
+    			   'message' => "Insufficient Parameters"
+    			);
+			echo json_encode($responseObj);
+			exit();
+		}
+
+		$userSessionObject = new UserController();
+
+		if( $userSessionObject->validate_access_token( $access_token ) ){
+			$log->info("Access Token Validated...");
+		}
+		else{
+			$log->info("Could Not Validate Access Token...");			
+
+			$responseObj = array('status' => false,
+				   'message' => 'Could Not Validate Access Token'
+				);
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+
+			exit();	
+		}
+
+
+		$ZAPObject = new ZAPController('JSON');
+
+		// Submit Scan Request and send the Scan Ref and Scan Id TO ZAP
+		$scan_submitted_response = $ZAPObject->SubmitScanRequest( $app_upload_id, $access_token );
+
+		if( $scan_submitted_response['status'] ){
+
+			$scan_id = $scan_submitted_response['scan_id'];
+			$scan_ref = $scan_submitted_response['scan_ref'];
+
+		}
+		else{
+
+			$responseObj = array('status' => true,
+								'message' => 'Could Not Submit Scan Request. Please Try Again.' );
+			echo json_encode($responseObj);
+			exit();
+
+		}
+
+		// try{
+		// 	$deviceControllerObject->setDIYsessionStatus($connection, 5, $app_client_ip, $app_upload_id);	
+		// }catch(Exception $e){
+		// 	$log->info("Error updating diy session status...");				
+		// }
+
+		$ZAPObject->EndSession($clientKey, $ScanURLIds, $scan_id, $scan_ref);
+
+		// Stop The Script Pushing Data to Client [ SendDataToClient ]
+		$sendDataToClientObject = new SendDataToClient($clientKey);
+		$sendDataToClientObject->EndClientConnection($clientKey);	
+
+		// Mark the device engagement status as free
+		$deviceControllerObject->UpdateDeviceEngagementStatus($DBconnection, $clientKey, false);
+
+		// echo "Reset VNC Password \n";
+		$vnc_object = new VNC();
+		$vnc_password_setup = $vnc_object->changeVNCpassword( $clientKey );
+		
+		if( $vnc_password_setup['status'] ){
+			$vnc_password_setup_status = $deviceControllerObject->UpdateDeviceVNCconfig( $DBConnection, $deviceIp, $$vnc_password_setup['password'] );
+		}			
+
+
+		$responseObj = array('status' => true );
+		echo json_encode($responseObj);
+	});
+
+
+
+
+	$app->post('/diy/userPendingSession/', function(){
+
+		if( isset($_POST['email']) && isset($_POST['access_token']) ){
+			$user_email = $_POST['email'];
+			$access_token = $_POST['access_token'];
+		}
+		else{
+			$responseObj = array('status' => false,
+    			   'message' => "Insufficient Parameters"
+    			);
+
+			echo json_encode($responseObj);
+			exit();
+		}
+
+		$dbConnectionObject = new DBconnect();
+		$DBConnection = $dbConnectionObject->ConnectToDB();
+
+		$userControllerObject = new UserController();
+
+		if( $userControllerObject->validate_access_token( $access_token ) ){
+			$log->info("Access Token Validated...");
+		}
+		else{
+			$log->info("Could Not Validate Access Token...");			
+
+			$responseObj = array('status' => false,
+				   'message' => 'Could Not Validate Access Token'
+				);
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+
+			exit();	
+		}
+
+		$user_pending_sessions_response = $userControllerObject->GetPendingSessions( $DBConnection, $user_email );
+
+		if( $user_pending_sessions_response['status'] ){
+
+			if( sizeof( $user_pending_sessions_response['pending_sessions'] ) > 0 ){
+				$response_code = Constants::USER_HAS_PENDING_SESSIONS;
+			}
+			else{
+				$response_code = Constants::NO_PENDING_SESSIONS;
+			}
+
+			$responseObj = array('status' => $response_code,
+				'booking_slots' => $user_pending_sessions_response['pending_sessions']
+			);
+
+		}
+		else{
+
+			$responseObj = array('status' => false,
+		   		'message' => $user_pending_sessions_response['message']
+			);
+		}
+
+		$responseObj = json_encode($responseObj);
+		echo $responseObj;
+
+	});
+
+
+
+
+	$app->post('/diy/userBooking/', function(){
+
+		if( isset($_POST['email']) && isset($_POST['access_token']) ){
+			$user_email = $_POST['email'];
+			$access_token = $_POST['access_token'];
+		}
+		else{
+			$responseObj = array('status' => false,
+    			   'message' => "Missing User Email"
+    			);
+
+			echo json_encode($responseObj);
+			exit();
+		}
+
+		$dbConnectionObject = new DBconnect();
+		$DBConnection = $dbConnectionObject->ConnectToDB();
+
+		$userControllerObject = new UserController();
+
+		if( $userControllerObject->validate_access_token( $access_token ) ){
+			$log->info("Access Token Validated...");
+		}
+		else{
+			$log->info("Could Not Validate Access Token...");			
+
+			$responseObj = array('status' => false,
+				   'message' => 'Could Not Validate Access Token'
+				);
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+
+			exit();	
+		}
+
+		$user_bookings_response = $userControllerObject->GetBookings( $DBConnection, $user_email );
+
+		if( $user_bookings_response['status'] ){
+
+			if( sizeof( $user_bookings_response['bookings'] ) > 0 ){
+				$response_code = Constants::USER_HAS_SCHEDULED_BOOKINGS;
+			}
+			else{
+				$response_code = Constants::NO_SCHEDULED_BOOKINGS;
+			}
+
+			$responseObj = array('status' => $response_code,
+				'booking_slots' => $user_bookings_response['bookings']
+			);
+
+		}
+		else{
+
+			$responseObj = array('status' => false,
+		   		'message' => $user_bookings_response['message']
+			);
+		}
+
+		$responseObj = json_encode($responseObj);
+		echo $responseObj;
+
+	});
+
+
+
+
+
+	$app->post('/diy/checkSetupStatus/', function(){
+
+		if( isset($_POST['app_upload_id']) && isset($_POST['app_client_ip']) && isset($_POST['access_token']) ){
+
+			$app_upload_id = $_POST['app_upload_id'];
+			$clientKey = $_POST['app_client_ip'];
+			$access_token = $_POST['access_token'];
+		}
+		else{
+			$responseObj = array('status' => false,
+    			   'message' => "Missing User Email"
+    			);
+
+			echo json_encode($responseObj);
+			exit();
+		}
+
+		$userSessionObject = new UserController();
+
+		if( $userSessionObject->validate_access_token( $access_token ) ){
+			$log->info("Access Token Validated...");
+		}
+		else{
+			$log->info("Could Not Validate Access Token...");			
+
+			$responseObj = array('status' => false,
+				   'message' => 'Could Not Validate Access Token'
+				);
+
+			$responseObj = json_encode($responseObj);
+			echo $responseObj;
+
+			exit();	
+		}
+
+		$dbConnectionObject = new DBconnect();
+		$DBConnection = $dbConnectionObject->ConnectToDB();
+
+		$deviceControllerObject = new DeviceManager($clientKey);
+		$isDeviceReady = $deviceControllerObject->getDeviceSetupStatus($DBConnection, $app_upload_id);
+
+		if ( $isDeviceReady ){
+			$responseObj = array('status' => true );
+		}
+		else{
+			$responseObj = array('status' => true );
+		}
+
+		echo json_encode($responseObj);
+	});
+
+
+
+
+	$app->run();
+?>
