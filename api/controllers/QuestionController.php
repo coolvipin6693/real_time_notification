@@ -130,11 +130,10 @@
 				$questions_list = array();
 
 			    foreach ($cursor as $document){
-			    	$question_obj = array('id' => $document["_id"],
+			    	$question_obj = array('id' => $document["_id"]->{'$id'},
 			    							'question_text' => $document["question_text"],
 			    							'category' => $document["category"],
 			    							'asked_by_user' => $document["user_id"],
-			    							'watchers' => $document["watchers"],
 			    							'answers' => $document["answers"]
 			    		);
 

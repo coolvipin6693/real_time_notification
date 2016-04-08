@@ -18,10 +18,10 @@
 
 /////////////////////// REGISTER NEW USER /////////////////////////////////////////////////////
 
-	$app->post('/gossip/registerUser/', function(){
+	$app->post('/registerUser/', function(){
 
-		if( isset($_GET['email_id']) ) {
-			$email_id = $_GET['email_id'];
+		if( isset($_POST['email_id']) ) {
+			$email_id = $_POST['email_id'];
 		}
 		else{
 			$responseObj = array('status' => false,
@@ -66,12 +66,12 @@
 
 ////////////////////////////// ASK NEW QUESTION BY A USER /////////////////////////////////////////////////
 
-	$app->post('/gossip/askQuestion/', function(){
+	$app->post('/askQuestion/', function(){
 
-		if( isset($_GET['user_id']) && isset($_GET['question_string']) && isset($_GET['category']) ) {
-			$user_id = $_GET['user_id'];
-			$question_text = $_GET['question_string'];
-			$category = $_GET['category'];
+		if( isset($_POST['user_id']) && isset($_POST['question_string']) && isset($_POST['category']) ) {
+			$user_id = $_POST['user_id'];
+			$question_text = $_POST['question_string'];
+			$category = $_POST['category'];
 		}
 		else{
 			$responseObj = array('status' => false,
@@ -116,11 +116,12 @@
 
 ///////////////////////////////////// ADD A WATCHER TO A QUESTION ///////////////////////////////////////
 
-	$app->post('/gossip/watchQuestion/', function(){
+	$app->post('/watchQuestion/', function(){
+		$log = KLogger::logger();
+		if( isset($_POST['user_id']) && isset($_POST['question_id']) ) {
 
-		if( isset($_GET['user_id']) && isset($_GET['question_id']) ) {
-			$user_id = $_GET['user_id'];
-			$question_id = $_GET['question_id'];
+			$user_id = $_POST['user_id'];
+			$question_id = $_POST['question_id'];
 		}
 		else{
 			$responseObj = array('status' => false,
@@ -130,7 +131,7 @@
 			exit();
 		}
 
-		$log = KLogger::logger();
+
 		$log->info("Adding new watcher to question : ".$question_id);
 
 		$dbConnectionObject = new DBconnect();
@@ -166,7 +167,7 @@
 
 ///////////////////////// GET QUESTIONS LIST ///////////////////////////////////////////////////
 
-	$app->get('/gossip/getQuestionList/', function(){
+	$app->get('/getQuestionList/', function(){
 
 		if( isset($_GET['user_id']) ) {
 			$user_id = $_GET['user_id'];
@@ -231,12 +232,12 @@
 
 ////////////////////////// ANSWER QUESTION ////////////////////////////////////////////////////
 
-	$app->post('/gossip/answerQuestion/', function(){
+	$app->post('/answerQuestion/', function(){
 
-		if( isset($_GET['user_id']) && isset($_GET['question_id']) && isset($_GET['answer_string']) ) {
-			$user_id = $_GET['user_id'];
-			$question_id = $_GET['question_id'];
-			$answer_string = $_GET['answer_string'];
+		if( isset($_POST['user_id']) && isset($_POST['question_id']) && isset($_POST['answer_string']) ) {
+			$user_id = $_POST['user_id'];
+			$question_id = $_POST['question_id'];
+			$answer_string = $_POST['answer_string'];
 		}
 		else{
 			$responseObj = array('status' => false,
@@ -282,13 +283,13 @@
 	
 ////////////////////////// ANSWER QUESTION ////////////////////////////////////////////////////
 
-	$app->post('/gossip/modifyAnswer/', function(){
+	$app->post('/modifyAnswer/', function(){
 
-		if( isset($_GET['user_id']) && isset($_GET['question_id']) && isset($_GET['answer_id']) &&  isset($_GET['new_answer_string']) ) {
-			$user_id = $_GET['user_id'];
-			$question_id = $_GET['question_id'];
-			$answer_id = $_GET['answer_id'];
-			$new_answer_string = $_GET['new_answer_string'];
+		if( isset($_POST['user_id']) && isset($_POST['question_id']) && isset($_POST['answer_id']) &&  isset($_POST['new_answer_string']) ) {
+			$user_id = $_POST['user_id'];
+			$question_id = $_POST['question_id'];
+			$answer_id = $_POST['answer_id'];
+			$new_answer_string = $_POST['new_answer_string'];
 		}
 		else{
 			$responseObj = array('status' => false,
