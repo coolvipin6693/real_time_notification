@@ -26,10 +26,10 @@
 		
 				$mongo_id = new MongoId($question_id);
 
-				$questions_collection->update(array('_id' => $mongo_id,array('$push' => array("watchers" => $user_id))));
+				$questions_collection->update( array( "_id" => $mongo_id), array('$push' => array("watchers" => $user_id)) );
 			    $this->log->info("New Watcher added successfully to question : ".$question_id);	
 
-				$question_record = $collection->findOne(array("_id" => $mongo_id));
+				$question_record = $questions_collection->findOne(array("_id" => $mongo_id));
     			$question_owner_id = $question_record["user_id"] . "\n";
 
 			    // Trigger Notification for NEW_WATCHER_EVENT

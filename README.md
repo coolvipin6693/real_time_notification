@@ -2,7 +2,7 @@
 
 To demonstrate a real time Publish / Subscribe Notification system, this project illustrates a 
 simple Q&A forum, wherein users can post questions and all the users can answer those questions.
-Users can "watch" a question, so that whenever any "change" is there in that question, the 'watcher/subscriber' would be notified via an instant notification. The "change" refers to any new answer that has been added to the question. Also, whenever any new user answers a question or starts following [ watching ] a question, thw owner of that question receive a notification.
+Users can "watch" a question, so that whenever any "change" is there in that question, the 'watcher/subscriber' would be notified via an instant notification. The "change" refers to any new answer that has been added to the question. Also, whenever any new user answers a question or starts following [ watching ] a question, the owner of that question receive a notification.
 
 Currently, this project does not involve real authentication system for users, users can simply register using their email id and login using the same. No password based authentication ahs been implemented for demonstrating the Pub/Sub system. 
 
