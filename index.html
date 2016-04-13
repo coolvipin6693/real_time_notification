@@ -196,10 +196,13 @@
 		<script src="//js.pusher.com/3.0/pusher.min.js"></script>
 		<!-- Pusher script ends-->
  		<script>
-
+ 			var base_url = 'http://192.168.1.82/gossip/api/';
+ 			// var base_url = 'http://54.187.96.118/real_time_notification/api/';
 			$(document).ready(function() {
 				var user = Cookies.get('userEmail');
 				var counter = 0;
+				
+				
 				
 				if( user != undefined && user != '') {
 					$('#userList').removeClass('hide');
@@ -209,7 +212,7 @@
 					$('#userInfo').html('<a href="#" class="dropdown-toggle" data-toggle="dropdown">'+user+'<b class="caret"></b></a><ul class="dropdown-menu"><li><a href="#" id="logoutBtn">Logout</a></li></ul>');
 					$.ajax({
 						type:'GET',
-						url: 'http://192.168.1.82/gossip/api/getQuestionList/',
+						url: base_url+'getQuestionList/',
 						data : {
 							'user_id' : user
 			     		},
@@ -241,7 +244,7 @@
 									var pusher = new Pusher('302a9c3ba67be4c3d5ee');
 									var channel = pusher.subscribe(value.id);
 									channel.bind('NEW_WATCHER',function(data){
-										
+
 										var questionId = data.message.question_id;
 										var userId = data.message.watcher;
 										if( userId != user ){
@@ -306,7 +309,7 @@
 					userEmail = $('#emailInput').val();
 					$.ajax({
 						type:'POST',  
-						url: 'http://192.168.1.82/gossip/api/registerUser',
+						url: base_url+'registerUser',
 						data : {
 							'email_id' : userEmail
 			     		},
@@ -331,7 +334,7 @@
 					userEmail = $('#emailInput').val();
 					$.ajax({
 						type:'POST',
-						url: 'http://192.168.1.82/gossip/api/loginUser',
+						url: base_url+'loginUser',
 						data : {
 							'email_id' : userEmail
 			     		},
@@ -369,7 +372,7 @@
 					console.log(id);
 					$.ajax({
 						type:'POST',
-						url: 'http://192.168.1.82/gossip/api/answerQuestion',
+						url: base_url+'answerQuestion',
 						data : {
 							'user_id' : user,
 							'question_id' : id,
@@ -408,7 +411,7 @@
                     console.log(Cookies.get('userEmail'));
 					$.ajax({
 						type:'POST',
-						url: 'http://192.168.1.82/gossip/api/watchQuestion',
+						url: base_url+'watchQuestion',
 						data : {
 							'user_id' : Cookies.get('userEmail'),
 							'question_id' : id
@@ -449,7 +452,7 @@
  					$('body').pgNotification({"message":"Answer is marked as not interested", "type": 'success', "timeout": 4000}).show();
  					$.ajax({
 						type:'POST',
-						url: 'http://192.168.1.82/gossip/api/unwatchQuestion',
+						url: base_url+'unwatchQuestion',
 						data : {
 							'user_id' : Cookies.get('userEmail'),
 							'question_id' : id
@@ -499,7 +502,7 @@
 
  						$.ajax({
 						type:'POST',
-						url: 'http://192.168.1.82/gossip/api/askQuestion',
+						url: base_url+'askQuestion',
 						data : {
 							'user_id' : Cookies.get('userEmail'),
 							'question_string' : questionText,
