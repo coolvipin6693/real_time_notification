@@ -26,15 +26,34 @@
 		
 				$mongo_id = new MongoId($question_id);
 
+			   	$question_record = array( 
+	        		"_id" => $mongo_id
+	    		);
+
+				$doc = $questions_collection->findOne($question_record);
+				if( !empty($doc) ){
+				    $this->log->info("User Matching Record found successfully in questions collection");	
+				    $question_owner = $doc['user_id'];
+				}else{
+			    	$this->log->info("User Matching Document not found in the Users Collection : ".$e);	
+				}
+
 				$questions_collection->update( array( "_id" => $mongo_id), array('$push' => array("watchers" => $user_id)) );
 			    $this->log->info("New Watcher added successfully to question : ".$question_id);	
 
 				$question_record = $questions_collection->findOne(array("_id" => $mongo_id));
     			$question_owner_id = $question_record["user_id"] . "\n";
 
+
+			   	$question_data = array( 
+	        		"owner" => $question_owner_id,
+	        		"watcher" => $user_id,
+	        		"question_id" => $question_id
+	    		);
+
 			    // Trigger Notification for NEW_WATCHER_EVENT
 			    $this->persist_notification( $question_id, "NEW_WATCHER_ADDED : ".$user_id, $question_owner_id );
-				$this->triggerPusherNotification( $question_id, "NEW_WATCHER", $user_id );
+				$this->triggerPusherNotification( $question_id, "NEW_WATCHER", $question_data );
 
 				$responseObj = array('status' => true    
 					);
@@ -59,10 +78,27 @@
 				$questions_collection = $db->createCollection("questions");
 			    $this->log->info("Collection Questions Selected Successfully");
 
+				$mongo_id = new MongoId($question_id);
+
+			   	$question_record = array( 
+	        		"_id" => $mongo_id
+	    		);
+
+				$doc = $questions_collection->findOne($question_record);
+				if( !empty($doc) ){
+				    $this->log->info("User Matching Record found successfully in questions collection");	
+				    $question_owner = $doc['user_id'];
+				}else{
+			    	$this->log->info("User Matching Document not found in the Users Collection : ".$e);	
+				}
+
+
+
 				$answer_obj = array(
 						"user_id" => $user_id,
 						"answer_string" => $answer_string,
-						"answer_id" => $this->generateAnswerID( $user_id, $question_id )
+						"answer_id" => $this->generateAnswerID( $user_id, $question_id ),
+						"owner" => $question_owner
 					);		
 				$questions_collection->update(array("_id"=> new MongoId($question_id) ),array('$push' => array("answers" => $answer_obj)));
 			    

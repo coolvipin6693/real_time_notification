@@ -200,6 +200,7 @@
 			$(document).ready(function() {
 				var user = Cookies.get('userEmail');
 				var counter = 0;
+				
 				if( user != undefined && user != '') {
 					$('#userList').removeClass('hide');
 					$('.askQuestion').removeClass('hide');
@@ -239,8 +240,19 @@
 
 									var pusher = new Pusher('302a9c3ba67be4c3d5ee');
 									var channel = pusher.subscribe(value.id);
-									channel.bind('NEW_WATCHER_ADDED',function(data){
-										alert("Put pg notification");
+									channel.bind('NEW_WATCHER',function(data){
+										
+										var questionId = data.message.question_id;
+										var userId = data.message.watcher;
+										if( userId != user ){
+
+											var newHtml = '<li><a href="#"><i class="fa fa-cloud-upload info"></i><b>'+userId+'</b>is interested in your question <span class="date">'+questionId+'</span></a></li>';
+											counter = counter + 1;
+											var globeHtml = '<i class="glyphicon glyphicon-globe"></i><span class="bubble">'+counter+'</span>';
+											$("#globeCounter").html(globeHtml);
+											$(".notificationListItem").html(newHtml);
+										
+										}
 									});
 
 									channel.bind('NEW_ANSWER',function(data){
@@ -472,8 +484,9 @@
  				$('#globeCounter').on('click', function(e) {
  					e.preventDefault();
  					counter = 0;
- 					var globeHtml = '<i class="glyphicon glyphicon-globe"></i>';
-					$("#globeCounter").html(globeHtml);
+ 					var node = $(this);
+ 					node.find('.bubble').addClass('hide');
+ 					console.log(node);
  					console.log("Clicked");
  				});
 
