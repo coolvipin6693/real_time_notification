@@ -1,0 +1,1878 @@
+[ INFO  ][12 Apr 2016 4:11:44 PM Asia/Calcutta][Unknown][Line:291] Getting All Questions List 
+[ INFO  ][12 Apr 2016 4:11:44 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:11:44 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:11:44 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : rahul@wegilant.com 
+[ INFO  ][12 Apr 2016 4:11:44 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:11:44 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:11:44 PM Asia/Calcutta][Unknown][Line:42] Exception Occured while Matching Document not found in the Users Collection : exception 'ErrorException' with message 'Undefined variable: e' in /var/www/html/gossip/api/controllers/UserSessionController.php:36
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/UserSessionController.php(36): Slim\Slim::handleErrors(8, 'Undefined varia...', '/var/www/html/g...', 36, Array)
+#1 /var/www/html/gossip/api/index.php(297): UserSessionController->validate_user_id(Object(MongoClient), 'rahul@wegilant....')
+#2 [internal function]: {closure}()
+#3 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#4 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#5 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#6 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#9 /var/www/html/gossip/api/index.php(479): Slim\Slim->run()
+#10 {main} 
+[ INFO  ][12 Apr 2016 4:11:44 PM Asia/Calcutta][Unknown][Line:303] Invalid User ID 
+[ INFO  ][12 Apr 2016 4:13:42 PM Asia/Calcutta][Unknown][Line:291] Getting All Questions List 
+[ INFO  ][12 Apr 2016 4:13:42 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:13:42 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:13:42 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : rahul@wegilant.com 
+[ INFO  ][12 Apr 2016 4:13:42 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:13:42 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:13:42 PM Asia/Calcutta][Unknown][Line:42] Exception Occured while Matching Document not found in the Users Collection : exception 'ErrorException' with message 'Undefined variable: e' in /var/www/html/gossip/api/controllers/UserSessionController.php:36
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/UserSessionController.php(36): Slim\Slim::handleErrors(8, 'Undefined varia...', '/var/www/html/g...', 36, Array)
+#1 /var/www/html/gossip/api/index.php(297): UserSessionController->validate_user_id(Object(MongoClient), 'rahul@wegilant....')
+#2 [internal function]: {closure}()
+#3 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#4 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#5 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#6 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#9 /var/www/html/gossip/api/index.php(479): Slim\Slim->run()
+#10 {main} 
+[ INFO  ][12 Apr 2016 4:13:42 PM Asia/Calcutta][Unknown][Line:303] Invalid User ID 
+[ INFO  ][12 Apr 2016 4:14:39 PM Asia/Calcutta][Unknown][Line:40] Creating New User Entry 
+[ INFO  ][12 Apr 2016 4:14:39 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:14:39 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:14:39 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : test@test2.com 
+[ INFO  ][12 Apr 2016 4:14:39 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:14:39 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:14:39 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][12 Apr 2016 4:14:39 PM Asia/Calcutta][Unknown][Line:49] User Created Successfully ! 
+[ INFO  ][12 Apr 2016 4:14:41 PM Asia/Calcutta][Unknown][Line:291] Getting All Questions List 
+[ INFO  ][12 Apr 2016 4:14:41 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:14:41 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:14:41 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : test@test2.com 
+[ INFO  ][12 Apr 2016 4:14:41 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:14:41 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:14:41 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 4:14:41 PM Asia/Calcutta][Unknown][Line:300] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 4:14:41 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 4:14:41 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:14:41 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 4:14:41 PM Asia/Calcutta][Unknown][Line:323] Got all questions ! 
+[ INFO  ][12 Apr 2016 4:17:42 PM Asia/Calcutta][Unknown][Line:291] Getting All Questions List 
+[ INFO  ][12 Apr 2016 4:17:42 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:17:42 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:17:42 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : test@test2.com 
+[ INFO  ][12 Apr 2016 4:17:42 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:17:42 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:17:42 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 4:17:42 PM Asia/Calcutta][Unknown][Line:300] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 4:17:42 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 4:17:42 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:17:42 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 4:17:42 PM Asia/Calcutta][Unknown][Line:323] Got all questions ! 
+[ INFO  ][12 Apr 2016 4:18:25 PM Asia/Calcutta][Unknown][Line:40] Creating New User Entry 
+[ INFO  ][12 Apr 2016 4:18:25 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:18:25 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:18:25 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : a@b.com 
+[ INFO  ][12 Apr 2016 4:18:25 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:18:25 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:18:25 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][12 Apr 2016 4:18:25 PM Asia/Calcutta][Unknown][Line:49] User Created Successfully ! 
+[ INFO  ][12 Apr 2016 4:18:26 PM Asia/Calcutta][Unknown][Line:291] Getting All Questions List 
+[ INFO  ][12 Apr 2016 4:18:26 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:18:26 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:18:26 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 4:18:26 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:18:26 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:18:26 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 4:18:26 PM Asia/Calcutta][Unknown][Line:300] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 4:18:26 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 4:18:26 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:18:26 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 4:18:26 PM Asia/Calcutta][Unknown][Line:323] Got all questions ! 
+[ INFO  ][12 Apr 2016 4:32:09 PM Asia/Calcutta][Unknown][Line:40] Creating New User Entry 
+[ INFO  ][12 Apr 2016 4:32:09 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:32:09 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:32:09 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : a@b.com 
+[ INFO  ][12 Apr 2016 4:32:09 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:32:09 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:32:09 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][12 Apr 2016 4:32:09 PM Asia/Calcutta][Unknown][Line:49] User Created Successfully ! 
+[ INFO  ][12 Apr 2016 4:32:10 PM Asia/Calcutta][Unknown][Line:291] Getting All Questions List 
+[ INFO  ][12 Apr 2016 4:32:10 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:32:10 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:32:10 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 4:32:10 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:32:10 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:32:10 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 4:32:10 PM Asia/Calcutta][Unknown][Line:300] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 4:32:10 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 4:32:10 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:32:10 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 4:32:10 PM Asia/Calcutta][Unknown][Line:323] Got all questions ! 
+[ INFO  ][12 Apr 2016 4:37:46 PM Asia/Calcutta][Unknown][Line:40] Creating New User Entry 
+[ INFO  ][12 Apr 2016 4:37:46 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:37:46 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:37:46 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : as@qw.com 
+[ INFO  ][12 Apr 2016 4:37:46 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:37:46 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:37:46 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][12 Apr 2016 4:37:46 PM Asia/Calcutta][Unknown][Line:49] User Created Successfully ! 
+[ INFO  ][12 Apr 2016 4:37:47 PM Asia/Calcutta][Unknown][Line:291] Getting All Questions List 
+[ INFO  ][12 Apr 2016 4:37:47 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:37:47 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:37:47 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : as@qw.com 
+[ INFO  ][12 Apr 2016 4:37:47 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:37:47 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:37:47 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 4:37:47 PM Asia/Calcutta][Unknown][Line:300] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 4:37:47 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 4:37:47 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:37:47 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 4:37:47 PM Asia/Calcutta][Unknown][Line:323] Got all questions ! 
+[ INFO  ][12 Apr 2016 4:39:00 PM Asia/Calcutta][Unknown][Line:291] Getting All Questions List 
+[ INFO  ][12 Apr 2016 4:39:00 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:39:00 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:39:00 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : as@qw.com 
+[ INFO  ][12 Apr 2016 4:39:00 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:39:00 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:39:00 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 4:39:00 PM Asia/Calcutta][Unknown][Line:300] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 4:39:00 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 4:39:00 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:39:00 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 4:39:00 PM Asia/Calcutta][Unknown][Line:323] Got all questions ! 
+[ INFO  ][12 Apr 2016 4:44:34 PM Asia/Calcutta][Unknown][Line:40] Creating New User Entry 
+[ INFO  ][12 Apr 2016 4:44:34 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:44:34 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:44:34 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : aa@aa.aa 
+[ INFO  ][12 Apr 2016 4:44:34 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:44:34 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:44:34 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][12 Apr 2016 4:44:34 PM Asia/Calcutta][Unknown][Line:49] User Created Successfully ! 
+[ INFO  ][12 Apr 2016 4:44:35 PM Asia/Calcutta][Unknown][Line:291] Getting All Questions List 
+[ INFO  ][12 Apr 2016 4:44:35 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:44:35 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:44:35 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : aa@aa.aa 
+[ INFO  ][12 Apr 2016 4:44:35 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:44:35 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:44:35 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 4:44:35 PM Asia/Calcutta][Unknown][Line:300] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 4:44:35 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 4:44:35 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:44:35 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 4:44:35 PM Asia/Calcutta][Unknown][Line:323] Got all questions ! 
+[ INFO  ][12 Apr 2016 4:47:31 PM Asia/Calcutta][Unknown][Line:40] Creating New User Entry 
+[ INFO  ][12 Apr 2016 4:47:31 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:47:31 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:47:31 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : aaassd@wsdff.kkkk 
+[ INFO  ][12 Apr 2016 4:47:31 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:47:31 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:47:31 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][12 Apr 2016 4:47:31 PM Asia/Calcutta][Unknown][Line:49] User Created Successfully ! 
+[ INFO  ][12 Apr 2016 4:47:32 PM Asia/Calcutta][Unknown][Line:291] Getting All Questions List 
+[ INFO  ][12 Apr 2016 4:47:32 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:47:32 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:47:32 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : aaassd@wsdff.kkkk 
+[ INFO  ][12 Apr 2016 4:47:32 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:47:32 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:47:32 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 4:47:32 PM Asia/Calcutta][Unknown][Line:300] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 4:47:32 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 4:47:32 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:47:32 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 4:47:32 PM Asia/Calcutta][Unknown][Line:323] Got all questions ! 
+[ INFO  ][12 Apr 2016 4:50:14 PM Asia/Calcutta][Unknown][Line:40] Creating New User Entry 
+[ INFO  ][12 Apr 2016 4:50:14 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:50:14 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:50:14 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : asasasasas@asasas.asasas 
+[ INFO  ][12 Apr 2016 4:50:14 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:50:14 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:50:14 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][12 Apr 2016 4:50:14 PM Asia/Calcutta][Unknown][Line:49] User Created Successfully ! 
+[ INFO  ][12 Apr 2016 4:50:15 PM Asia/Calcutta][Unknown][Line:290] Getting All Questions List 
+[ INFO  ][12 Apr 2016 4:50:15 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:50:15 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:50:15 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : asasasasas@asasas.asasas 
+[ INFO  ][12 Apr 2016 4:50:15 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:50:15 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:50:15 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 4:50:15 PM Asia/Calcutta][Unknown][Line:299] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 4:50:15 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 4:50:15 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:50:15 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 4:50:15 PM Asia/Calcutta][Unknown][Line:322] Got all questions ! 
+[ INFO  ][12 Apr 2016 4:51:25 PM Asia/Calcutta][Unknown][Line:40] Creating New User Entry 
+[ INFO  ][12 Apr 2016 4:51:25 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:51:25 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:51:25 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : qawsed@qawsed.qawsed 
+[ INFO  ][12 Apr 2016 4:51:25 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:51:25 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:51:25 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][12 Apr 2016 4:51:25 PM Asia/Calcutta][Unknown][Line:49] User Created Successfully ! 
+[ INFO  ][12 Apr 2016 4:51:25 PM Asia/Calcutta][Unknown][Line:290] Getting All Questions List 
+[ INFO  ][12 Apr 2016 4:51:25 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:51:25 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:51:25 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : qawsed@qawsed.qawsed 
+[ INFO  ][12 Apr 2016 4:51:25 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:51:25 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:51:25 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 4:51:25 PM Asia/Calcutta][Unknown][Line:299] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 4:51:25 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 4:51:25 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:51:25 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 4:51:25 PM Asia/Calcutta][Unknown][Line:322] Got all questions ! 
+[ INFO  ][12 Apr 2016 4:53:03 PM Asia/Calcutta][Unknown][Line:40] Creating New User Entry 
+[ INFO  ][12 Apr 2016 4:53:03 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:53:03 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:53:03 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : 12@12.12 
+[ INFO  ][12 Apr 2016 4:53:03 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:53:03 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:53:03 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][12 Apr 2016 4:53:03 PM Asia/Calcutta][Unknown][Line:49] User Created Successfully ! 
+[ INFO  ][12 Apr 2016 4:53:03 PM Asia/Calcutta][Unknown][Line:290] Getting All Questions List 
+[ INFO  ][12 Apr 2016 4:53:03 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:53:03 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:53:03 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : 12@12.12 
+[ INFO  ][12 Apr 2016 4:53:03 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:53:03 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:53:03 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 4:53:03 PM Asia/Calcutta][Unknown][Line:299] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 4:53:03 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 4:53:03 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:53:03 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 4:53:03 PM Asia/Calcutta][Unknown][Line:322] Got all questions ! 
+[ INFO  ][12 Apr 2016 4:54:39 PM Asia/Calcutta][Unknown][Line:40] Creating New User Entry 
+[ INFO  ][12 Apr 2016 4:54:39 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:54:39 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:54:39 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : qaz@qw.ok 
+[ INFO  ][12 Apr 2016 4:54:39 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:54:39 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:54:39 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][12 Apr 2016 4:54:39 PM Asia/Calcutta][Unknown][Line:49] User Created Successfully ! 
+[ INFO  ][12 Apr 2016 4:54:40 PM Asia/Calcutta][Unknown][Line:290] Getting All Questions List 
+[ INFO  ][12 Apr 2016 4:54:40 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:54:40 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:54:40 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : qaz@qw.ok 
+[ INFO  ][12 Apr 2016 4:54:40 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:54:40 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:54:40 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 4:54:40 PM Asia/Calcutta][Unknown][Line:299] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 4:54:40 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 4:54:40 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:54:40 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 4:54:40 PM Asia/Calcutta][Unknown][Line:322] Got all questions ! 
+[ INFO  ][12 Apr 2016 4:56:00 PM Asia/Calcutta][Unknown][Line:40] Creating New User Entry 
+[ INFO  ][12 Apr 2016 4:56:00 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:56:00 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:56:00 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : asdfgh@asdfhhj.com 
+[ INFO  ][12 Apr 2016 4:56:00 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:56:00 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:56:00 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][12 Apr 2016 4:56:00 PM Asia/Calcutta][Unknown][Line:49] User Created Successfully ! 
+[ INFO  ][12 Apr 2016 4:56:01 PM Asia/Calcutta][Unknown][Line:290] Getting All Questions List 
+[ INFO  ][12 Apr 2016 4:56:01 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 4:56:01 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 4:56:01 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : asdfgh@asdfhhj.com 
+[ INFO  ][12 Apr 2016 4:56:01 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:56:01 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 4:56:01 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 4:56:01 PM Asia/Calcutta][Unknown][Line:299] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 4:56:01 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 4:56:01 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 4:56:01 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 4:56:01 PM Asia/Calcutta][Unknown][Line:322] Got all questions ! 
+[ INFO  ][12 Apr 2016 5:02:22 PM Asia/Calcutta][Unknown][Line:40] Creating New User Entry 
+[ INFO  ][12 Apr 2016 5:02:22 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:02:22 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:02:22 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : h@q.csdsdsdsdsdsds 
+[ INFO  ][12 Apr 2016 5:02:22 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:02:22 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 5:02:22 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][12 Apr 2016 5:02:22 PM Asia/Calcutta][Unknown][Line:49] User Created Successfully ! 
+[ INFO  ][12 Apr 2016 5:04:30 PM Asia/Calcutta][Unknown][Line:40] Creating New User Entry 
+[ INFO  ][12 Apr 2016 5:04:30 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:04:30 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:04:30 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : h@q.csdsdsfdfdfdsdsdsds 
+[ INFO  ][12 Apr 2016 5:04:30 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:04:30 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 5:04:30 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][12 Apr 2016 5:04:30 PM Asia/Calcutta][Unknown][Line:49] User Created Successfully ! 
+[ INFO  ][12 Apr 2016 5:07:49 PM Asia/Calcutta][Unknown][Line:40] Creating New User Entry 
+[ INFO  ][12 Apr 2016 5:07:49 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:07:49 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:07:49 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : dexter@morgan.com 
+[ INFO  ][12 Apr 2016 5:07:49 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:07:49 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 5:07:49 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][12 Apr 2016 5:07:49 PM Asia/Calcutta][Unknown][Line:49] User Created Successfully ! 
+[ INFO  ][12 Apr 2016 5:07:50 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 5:07:50 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:07:50 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:07:50 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : dexter@morgan.com 
+[ INFO  ][12 Apr 2016 5:07:50 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:07:50 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 5:07:50 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 5:07:50 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 5:07:50 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 5:07:50 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:07:50 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 5:07:50 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 5:11:50 PM Asia/Calcutta][Unknown][Line:40] Creating New User Entry 
+[ INFO  ][12 Apr 2016 5:11:50 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:11:50 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:11:50 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : ssssssssssssssssss@sssssssssssssss.sssssssssss 
+[ INFO  ][12 Apr 2016 5:11:50 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:11:50 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 5:11:50 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][12 Apr 2016 5:11:50 PM Asia/Calcutta][Unknown][Line:49] User Created Successfully ! 
+[ INFO  ][12 Apr 2016 5:11:51 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 5:11:51 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:11:51 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:11:51 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : ssssssssssssssssss@sssssssssssssss.sssssssssss 
+[ INFO  ][12 Apr 2016 5:11:51 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:11:51 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 5:11:51 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 5:11:51 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 5:11:51 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 5:11:51 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:11:51 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 5:11:51 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 5:15:03 PM Asia/Calcutta][Unknown][Line:40] Creating New User Entry 
+[ INFO  ][12 Apr 2016 5:15:03 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:15:03 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:15:03 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : qqqqqqqqqqqqqqq@qqqqqqqqq.qqqqqq 
+[ INFO  ][12 Apr 2016 5:15:03 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:15:03 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 5:15:03 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][12 Apr 2016 5:15:03 PM Asia/Calcutta][Unknown][Line:49] User Created Successfully ! 
+[ INFO  ][12 Apr 2016 5:15:04 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 5:15:04 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:15:04 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:15:04 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : qqqqqqqqqqqqqqq@qqqqqqqqq.qqqqqq 
+[ INFO  ][12 Apr 2016 5:15:04 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:15:04 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 5:15:04 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 5:15:04 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 5:15:04 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 5:15:04 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:15:04 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 5:15:04 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 5:32:25 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 5:32:25 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:32:25 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:32:25 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : qqqqqqqqqqqqqqq@qqqqqqqqq.qqqqqq 
+[ INFO  ][12 Apr 2016 5:32:25 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:32:25 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 5:32:25 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 5:32:25 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 5:32:25 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 5:32:25 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:32:25 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 5:32:25 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 5:32:31 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 5:32:31 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:32:31 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:32:31 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : qqqqqqqqqqqqqqq@qqqqqqqqq.qqqqqq 
+[ INFO  ][12 Apr 2016 5:32:31 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:32:31 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 5:32:31 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 5:32:31 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 5:32:31 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 5:32:31 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:32:31 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 5:32:31 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 5:34:54 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 5:34:54 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:34:54 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:34:54 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : qqqqqqqqqqqqqqq@qqqqqqqqq.qqqqqq 
+[ INFO  ][12 Apr 2016 5:34:54 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:34:54 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 5:34:54 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 5:34:54 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 5:34:54 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 5:34:54 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:34:54 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 5:34:54 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 5:36:28 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 5:36:28 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:36:28 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:36:28 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : qqqqqqqqqqqqqqq@qqqqqqqqq.qqqqqq 
+[ INFO  ][12 Apr 2016 5:36:28 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:36:28 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 5:36:28 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 5:36:28 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 5:36:28 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 5:36:28 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:36:28 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 5:36:28 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 5:38:47 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 5:38:47 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:38:47 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:38:47 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : qqqqqqqqqqqqqqq@qqqqqqqqq.qqqqqq 
+[ INFO  ][12 Apr 2016 5:38:47 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:38:47 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 5:38:47 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 5:38:47 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 5:38:47 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 5:38:47 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:38:47 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 5:38:47 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 5:44:18 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 5:44:18 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:44:18 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:44:18 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : qqqqqqqqqqqqqqq@qqqqqqqqq.qqqqqq 
+[ INFO  ][12 Apr 2016 5:44:18 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:44:18 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 5:44:18 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 5:44:18 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 5:44:18 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 5:44:18 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:44:18 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 5:44:18 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 5:44:46 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 5:44:46 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:44:46 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:44:46 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : qqqqqqqqqqqqqqq@qqqqqqqqq.qqqqqq 
+[ INFO  ][12 Apr 2016 5:44:46 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:44:46 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 5:44:46 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 5:44:46 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 5:44:46 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 5:44:46 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:44:46 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 5:44:46 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 5:48:41 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 5:48:41 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:48:41 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:48:41 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : qqqqqqqqqqqqqqq@qqqqqqqqq.qqqqqq 
+[ INFO  ][12 Apr 2016 5:48:41 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:48:41 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 5:48:41 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 5:48:41 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 5:48:41 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 5:48:41 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:48:41 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 5:48:41 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 5:48:48 PM Asia/Calcutta][Unknown][Line:226] Adding new watcher to question : 5707559fed06b74c0c8b4567>Interested</button>							<button class= 
+[ INFO  ][12 Apr 2016 5:48:48 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:48:48 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:48:48 PM Asia/Calcutta][Unknown][Line:18] Adding User ID : qqqqqqqqqqqqqqq@qqqqqqqqq.qqqqqq to list of watchers for question id : 5707559fed06b74c0c8b4567>Interested</button>							<button class= 
+[ INFO  ][12 Apr 2016 5:48:48 PM Asia/Calcutta][Unknown][Line:22] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:48:48 PM Asia/Calcutta][Unknown][Line:25] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 5:48:48 PM Asia/Calcutta][Unknown][Line:42] Exception occured in inserting new Document in the Questions Collection : exception 'MongoException' with message 'Invalid object ID' in /var/www/html/gossip/api/controllers/QuestionController.php:27
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/QuestionController.php(27): MongoId->__construct('5707559fed06b74...')
+#1 /var/www/html/gossip/api/index.php(232): QuestionController->watch_question(Object(MongoClient), 'qqqqqqqqqqqqqqq...', '5707559fed06b74...')
+#2 [internal function]: {closure}()
+#3 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#4 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#5 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#6 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#9 /var/www/html/gossip/api/index.php(477): Slim\Slim->run()
+#10 {main} 
+[ INFO  ][12 Apr 2016 5:48:48 PM Asia/Calcutta][Unknown][Line:246] Error in Creating New Watcher for the Question 
+[ INFO  ][12 Apr 2016 5:48:51 PM Asia/Calcutta][Unknown][Line:226] Adding new watcher to question : 5707559fed06b74c0c8b4567>Interested</button>							<button class= 
+[ INFO  ][12 Apr 2016 5:48:51 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:48:51 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:48:51 PM Asia/Calcutta][Unknown][Line:18] Adding User ID : qqqqqqqqqqqqqqq@qqqqqqqqq.qqqqqq to list of watchers for question id : 5707559fed06b74c0c8b4567>Interested</button>							<button class= 
+[ INFO  ][12 Apr 2016 5:48:51 PM Asia/Calcutta][Unknown][Line:22] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:48:51 PM Asia/Calcutta][Unknown][Line:25] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 5:48:51 PM Asia/Calcutta][Unknown][Line:42] Exception occured in inserting new Document in the Questions Collection : exception 'MongoException' with message 'Invalid object ID' in /var/www/html/gossip/api/controllers/QuestionController.php:27
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/QuestionController.php(27): MongoId->__construct('5707559fed06b74...')
+#1 /var/www/html/gossip/api/index.php(232): QuestionController->watch_question(Object(MongoClient), 'qqqqqqqqqqqqqqq...', '5707559fed06b74...')
+#2 [internal function]: {closure}()
+#3 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#4 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#5 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#6 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#9 /var/www/html/gossip/api/index.php(477): Slim\Slim->run()
+#10 {main} 
+[ INFO  ][12 Apr 2016 5:48:51 PM Asia/Calcutta][Unknown][Line:246] Error in Creating New Watcher for the Question 
+[ INFO  ][12 Apr 2016 5:49:18 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 5:49:18 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:49:18 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:49:18 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : qqqqqqqqqqqqqqq@qqqqqqqqq.qqqqqq 
+[ INFO  ][12 Apr 2016 5:49:18 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:49:18 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 5:49:18 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 5:49:18 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 5:49:18 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 5:49:18 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:49:18 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 5:49:18 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 5:55:25 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 5:55:25 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:55:25 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:55:25 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : qqqqqqqqqqqqqqq@qqqqqqqqq.qqqqqq 
+[ INFO  ][12 Apr 2016 5:55:25 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:55:25 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 5:55:25 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 5:55:25 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 5:55:25 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 5:55:25 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:55:25 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 5:55:25 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 5:57:42 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 5:57:42 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:57:42 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:57:42 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : qqqqqqqqqqqqqqq@qqqqqqqqq.qqqqqq 
+[ INFO  ][12 Apr 2016 5:57:42 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:57:42 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 5:57:42 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 5:57:42 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 5:57:42 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 5:57:42 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:57:42 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 5:57:42 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 5:58:36 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 5:58:36 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 5:58:36 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 5:58:36 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : qqqqqqqqqqqqqqq@qqqqqqqqq.qqqqqq 
+[ INFO  ][12 Apr 2016 5:58:36 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:58:36 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 5:58:36 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 5:58:36 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 5:58:36 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 5:58:36 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 5:58:36 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 5:58:36 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 6:01:40 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 6:01:40 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 6:01:40 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 6:01:40 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : qqqqqqqqqqqqqqq@qqqqqqqqq.qqqqqq 
+[ INFO  ][12 Apr 2016 6:01:40 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 6:01:40 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 6:01:40 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 6:01:40 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 6:01:40 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 6:01:40 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 6:01:40 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 6:01:40 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 6:02:09 PM Asia/Calcutta][Unknown][Line:40] Creating New User Entry 
+[ INFO  ][12 Apr 2016 6:02:09 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 6:02:09 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 6:02:09 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : a@bbw.coq 
+[ INFO  ][12 Apr 2016 6:02:09 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][12 Apr 2016 6:02:09 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 6:02:09 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][12 Apr 2016 6:02:09 PM Asia/Calcutta][Unknown][Line:49] User Created Successfully ! 
+[ INFO  ][12 Apr 2016 6:02:10 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 6:02:10 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 6:02:10 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 6:02:10 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@bbw.coq 
+[ INFO  ][12 Apr 2016 6:02:10 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 6:02:10 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 6:02:10 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 6:02:10 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 6:02:10 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 6:02:10 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 6:02:10 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 6:02:10 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 6:03:41 PM Asia/Calcutta][Unknown][Line:226] Adding new watcher to question : 5707559fed06b74c0c8b4567>Interested</button>							<button class= 
+[ INFO  ][12 Apr 2016 6:03:41 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 6:03:41 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 6:03:41 PM Asia/Calcutta][Unknown][Line:18] Adding User ID : a@bbw.coq to list of watchers for question id : 5707559fed06b74c0c8b4567>Interested</button>							<button class= 
+[ INFO  ][12 Apr 2016 6:03:41 PM Asia/Calcutta][Unknown][Line:22] Database Selected ---  
+[ INFO  ][12 Apr 2016 6:03:41 PM Asia/Calcutta][Unknown][Line:25] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 6:03:41 PM Asia/Calcutta][Unknown][Line:42] Exception occured in inserting new Document in the Questions Collection : exception 'MongoException' with message 'Invalid object ID' in /var/www/html/gossip/api/controllers/QuestionController.php:27
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/QuestionController.php(27): MongoId->__construct('5707559fed06b74...')
+#1 /var/www/html/gossip/api/index.php(232): QuestionController->watch_question(Object(MongoClient), 'a@bbw.coq', '5707559fed06b74...')
+#2 [internal function]: {closure}()
+#3 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#4 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#5 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#6 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#9 /var/www/html/gossip/api/index.php(477): Slim\Slim->run()
+#10 {main} 
+[ INFO  ][12 Apr 2016 6:03:41 PM Asia/Calcutta][Unknown][Line:246] Error in Creating New Watcher for the Question 
+[ INFO  ][12 Apr 2016 6:03:41 PM Asia/Calcutta][Unknown][Line:226] Adding new watcher to question : 5707559fed06b74c0c8b4567>Interested</button>							<button class= 
+[ INFO  ][12 Apr 2016 6:03:41 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 6:03:41 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 6:03:41 PM Asia/Calcutta][Unknown][Line:18] Adding User ID : a@bbw.coq to list of watchers for question id : 5707559fed06b74c0c8b4567>Interested</button>							<button class= 
+[ INFO  ][12 Apr 2016 6:03:41 PM Asia/Calcutta][Unknown][Line:22] Database Selected ---  
+[ INFO  ][12 Apr 2016 6:03:41 PM Asia/Calcutta][Unknown][Line:25] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 6:03:41 PM Asia/Calcutta][Unknown][Line:42] Exception occured in inserting new Document in the Questions Collection : exception 'MongoException' with message 'Invalid object ID' in /var/www/html/gossip/api/controllers/QuestionController.php:27
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/QuestionController.php(27): MongoId->__construct('5707559fed06b74...')
+#1 /var/www/html/gossip/api/index.php(232): QuestionController->watch_question(Object(MongoClient), 'a@bbw.coq', '5707559fed06b74...')
+#2 [internal function]: {closure}()
+#3 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#4 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#5 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#6 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#9 /var/www/html/gossip/api/index.php(477): Slim\Slim->run()
+#10 {main} 
+[ INFO  ][12 Apr 2016 6:03:41 PM Asia/Calcutta][Unknown][Line:246] Error in Creating New Watcher for the Question 
+[ INFO  ][12 Apr 2016 6:16:19 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 6:16:19 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 6:16:19 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 6:16:19 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@bbw.coq 
+[ INFO  ][12 Apr 2016 6:16:19 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 6:16:19 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 6:16:19 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 6:16:19 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 6:16:19 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 6:16:19 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 6:16:19 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 6:16:19 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 6:17:37 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 6:17:37 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 6:17:37 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 6:17:37 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@bbw.coq 
+[ INFO  ][12 Apr 2016 6:17:37 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 6:17:37 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 6:17:37 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 6:17:37 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 6:17:37 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 6:17:37 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 6:17:37 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 6:17:37 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 6:17:44 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 6:17:44 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 6:17:44 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 6:17:44 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@bbw.coq 
+[ INFO  ][12 Apr 2016 6:17:44 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 6:17:44 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 6:17:44 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 6:17:44 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 6:17:44 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 6:17:44 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 6:17:44 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 6:17:44 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 6:20:09 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 6:20:09 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 6:20:09 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 6:20:09 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@bbw.coq 
+[ INFO  ][12 Apr 2016 6:20:09 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 6:20:09 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 6:20:09 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 6:20:09 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 6:20:09 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 6:20:09 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 6:20:09 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 6:20:09 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 6:21:31 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 6:21:31 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 6:21:31 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 6:21:31 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@bbw.coq 
+[ INFO  ][12 Apr 2016 6:21:31 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 6:21:31 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 6:21:31 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 6:21:31 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 6:21:31 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 6:21:31 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 6:21:31 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 6:21:31 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 7:19:12 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 7:19:12 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:19:12 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:19:12 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@bbw.coq 
+[ INFO  ][12 Apr 2016 7:19:12 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:19:12 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 7:19:12 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 7:19:12 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 7:19:12 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 7:19:12 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:19:12 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:19:12 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 7:24:55 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 7:24:55 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:24:55 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:24:55 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@bbw.coq 
+[ INFO  ][12 Apr 2016 7:24:55 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:24:55 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 7:24:55 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 7:24:55 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 7:24:55 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 7:24:55 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:24:55 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:24:55 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 7:26:59 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 7:26:59 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:26:59 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:26:59 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@bbw.coq 
+[ INFO  ][12 Apr 2016 7:26:59 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:26:59 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 7:26:59 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 7:26:59 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 7:26:59 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 7:26:59 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:26:59 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:26:59 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 7:27:10 PM Asia/Calcutta][Unknown][Line:163] Creating New Question Entry 
+[ INFO  ][12 Apr 2016 7:27:10 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:27:10 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:27:10 PM Asia/Calcutta][Unknown][Line:115] Creating New Question for User ID : a@bbw.coq, Question : Whhhhhh, category : Test 
+[ INFO  ][12 Apr 2016 7:27:10 PM Asia/Calcutta][Unknown][Line:120] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:27:10 PM Asia/Calcutta][Unknown][Line:123] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:27:10 PM Asia/Calcutta][Unknown][Line:138] New Documents inserted successfully into questions collection 
+[ INFO  ][12 Apr 2016 7:27:10 PM Asia/Calcutta][Unknown][Line:172] Question Added Successfully ! 
+[ INFO  ][12 Apr 2016 7:27:11 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 7:27:11 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:27:11 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:27:11 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@bbw.coq 
+[ INFO  ][12 Apr 2016 7:27:11 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:27:11 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 7:27:11 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 7:27:11 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 7:27:11 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 7:27:11 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:27:11 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:27:11 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 7:28:27 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 7:28:27 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:28:27 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:28:27 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@bbw.coq 
+[ INFO  ][12 Apr 2016 7:28:27 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:28:27 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 7:28:27 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 7:28:27 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 7:28:27 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 7:28:27 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:28:27 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:28:27 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 7:28:55 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 7:28:55 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:28:55 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:28:55 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@bbw.coq 
+[ INFO  ][12 Apr 2016 7:28:55 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:28:55 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 7:28:55 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 7:28:55 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 7:28:55 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 7:28:55 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:28:55 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:28:55 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 7:30:21 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 7:30:21 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:30:21 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:30:21 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@bbw.coq 
+[ INFO  ][12 Apr 2016 7:30:21 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:30:21 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 7:30:21 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 7:30:21 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 7:30:21 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 7:30:21 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:30:21 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:30:21 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 7:30:29 PM Asia/Calcutta][Unknown][Line:163] Creating New Question Entry 
+[ INFO  ][12 Apr 2016 7:30:29 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:30:29 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:30:29 PM Asia/Calcutta][Unknown][Line:115] Creating New Question for User ID : a@bbw.coq, Question :       , category : Test 
+[ INFO  ][12 Apr 2016 7:30:29 PM Asia/Calcutta][Unknown][Line:120] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:30:29 PM Asia/Calcutta][Unknown][Line:123] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:30:29 PM Asia/Calcutta][Unknown][Line:138] New Documents inserted successfully into questions collection 
+[ INFO  ][12 Apr 2016 7:30:29 PM Asia/Calcutta][Unknown][Line:172] Question Added Successfully ! 
+[ INFO  ][12 Apr 2016 7:30:30 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 7:30:30 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:30:30 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:30:30 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@bbw.coq 
+[ INFO  ][12 Apr 2016 7:30:30 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:30:30 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 7:30:30 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 7:30:30 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 7:30:30 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 7:30:30 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:30:30 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:30:30 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 7:31:01 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 7:31:01 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:31:01 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:31:01 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@bbw.coq 
+[ INFO  ][12 Apr 2016 7:31:01 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:31:01 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 7:31:01 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 7:31:01 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 7:31:01 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 7:31:01 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:31:01 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:31:01 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 7:31:07 PM Asia/Calcutta][Unknown][Line:163] Creating New Question Entry 
+[ INFO  ][12 Apr 2016 7:31:07 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:31:07 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:31:07 PM Asia/Calcutta][Unknown][Line:115] Creating New Question for User ID : a@bbw.coq, Question :   , category : Test 
+[ INFO  ][12 Apr 2016 7:31:07 PM Asia/Calcutta][Unknown][Line:120] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:31:07 PM Asia/Calcutta][Unknown][Line:123] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:31:07 PM Asia/Calcutta][Unknown][Line:138] New Documents inserted successfully into questions collection 
+[ INFO  ][12 Apr 2016 7:31:07 PM Asia/Calcutta][Unknown][Line:172] Question Added Successfully ! 
+[ INFO  ][12 Apr 2016 7:31:07 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 7:31:07 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:31:07 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:31:07 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@bbw.coq 
+[ INFO  ][12 Apr 2016 7:31:07 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:31:07 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 7:31:07 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 7:31:07 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 7:31:07 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 7:31:07 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:31:07 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:31:07 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 7:31:57 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 7:31:57 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:31:57 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:31:57 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@bbw.coq 
+[ INFO  ][12 Apr 2016 7:31:57 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:31:57 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 7:31:57 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 7:31:57 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 7:31:57 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 7:31:57 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:31:57 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:31:57 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 7:42:37 PM Asia/Calcutta][Unknown][Line:40] Creating New User Entry 
+[ INFO  ][12 Apr 2016 7:42:37 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:42:37 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:42:37 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : a@b.com 
+[ INFO  ][12 Apr 2016 7:42:37 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:42:37 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 7:42:37 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][12 Apr 2016 7:42:37 PM Asia/Calcutta][Unknown][Line:49] User Created Successfully ! 
+[ INFO  ][12 Apr 2016 7:42:38 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 7:42:38 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:42:38 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:42:38 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 7:42:38 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:42:38 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 7:42:38 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 7:42:38 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 7:42:38 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 7:42:38 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:42:38 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:42:38 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 7:42:55 PM Asia/Calcutta][Unknown][Line:163] Creating New Question Entry 
+[ INFO  ][12 Apr 2016 7:42:55 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:42:55 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:42:55 PM Asia/Calcutta][Unknown][Line:115] Creating New Question for User ID : a@b.com, Question : What is your problem?, category : Test 
+[ INFO  ][12 Apr 2016 7:42:55 PM Asia/Calcutta][Unknown][Line:120] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:42:55 PM Asia/Calcutta][Unknown][Line:123] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:42:55 PM Asia/Calcutta][Unknown][Line:138] New Documents inserted successfully into questions collection 
+[ INFO  ][12 Apr 2016 7:42:55 PM Asia/Calcutta][Unknown][Line:172] Question Added Successfully ! 
+[ INFO  ][12 Apr 2016 7:42:56 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 7:42:56 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:42:56 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:42:56 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 7:42:56 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:42:56 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 7:42:56 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 7:42:56 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 7:42:56 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 7:42:56 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:42:56 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:42:56 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 7:51:01 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 7:51:01 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:51:01 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:51:01 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 7:51:01 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:51:01 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 7:51:01 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 7:51:01 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 7:51:01 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 7:51:01 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:51:01 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:51:01 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 7:52:06 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 7:52:06 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:52:06 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:52:06 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 7:52:06 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:52:06 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 7:52:06 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 7:52:06 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 7:52:06 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 7:52:06 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:52:06 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:52:06 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 7:55:00 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 7:55:00 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:55:00 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:55:00 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 7:55:00 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:55:00 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 7:55:00 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 7:55:00 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 7:55:00 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 7:55:00 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:55:00 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:55:00 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 7:56:16 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 7:56:16 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 7:56:16 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 7:56:16 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 7:56:16 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:56:16 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 7:56:16 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 7:56:16 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 7:56:16 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 7:56:16 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 7:56:16 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 7:56:16 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:02:37 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:02:37 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:02:37 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:02:37 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:02:37 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:02:37 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:02:37 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:02:37 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:02:37 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:02:37 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:02:37 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:02:37 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:02:46 PM Asia/Calcutta][Unknown][Line:373] Adding new answer to question : 570d0267ed06b7043f229b25 by user ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:02:46 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:02:46 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:02:46 PM Asia/Calcutta][Unknown][Line:53] Adding New answer by User ID : a@b.com to list question id : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:02:46 PM Asia/Calcutta][Unknown][Line:57] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:02:46 PM Asia/Calcutta][Unknown][Line:60] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:03:36 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:03:36 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:03:36 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:03:36 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:03:36 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:03:36 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:03:36 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:03:36 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:03:36 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:03:36 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:03:36 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:03:36 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:03:51 PM Asia/Calcutta][Unknown][Line:373] Adding new answer to question : 570d0267ed06b7043f229b25 by user ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:03:51 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:03:51 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:03:51 PM Asia/Calcutta][Unknown][Line:53] Adding New answer by User ID : a@b.com to list question id : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:03:51 PM Asia/Calcutta][Unknown][Line:57] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:03:51 PM Asia/Calcutta][Unknown][Line:60] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:03:51 PM Asia/Calcutta][Unknown][Line:69] New Answer added successfully to question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:03:51 PM Asia/Calcutta][Unknown][Line:81] Exception occured in inserting new Answer in the Questions Collection : exception 'ErrorException' with message 'Undefined variable: collection' in /var/www/html/gossip/api/controllers/QuestionController.php:71
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/QuestionController.php(71): Slim\Slim::handleErrors(8, 'Undefined varia...', '/var/www/html/g...', 71, Array)
+#1 /var/www/html/gossip/api/index.php(379): QuestionController->add_answer(Object(MongoClient), 'a@b.com', '570d0267ed06b70...', 'S')
+#2 [internal function]: {closure}()
+#3 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#4 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#5 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#6 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#9 /var/www/html/gossip/api/index.php(561): Slim\Slim->run()
+#10 {main} 
+[ INFO  ][12 Apr 2016 8:04:34 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:04:34 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:04:34 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:04:34 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:04:34 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:04:34 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:04:34 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:04:34 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:04:34 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:04:34 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:04:34 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:04:34 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:04:40 PM Asia/Calcutta][Unknown][Line:373] Adding new answer to question : 570d0267ed06b7043f229b25 by user ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:04:40 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:04:40 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:04:40 PM Asia/Calcutta][Unknown][Line:53] Adding New answer by User ID : a@b.com to list question id : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:04:40 PM Asia/Calcutta][Unknown][Line:57] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:04:40 PM Asia/Calcutta][Unknown][Line:60] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:04:40 PM Asia/Calcutta][Unknown][Line:69] New Answer added successfully to question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:04:40 PM Asia/Calcutta][Unknown][Line:81] Exception occured in inserting new Answer in the Questions Collection : exception 'ErrorException' with message 'Undefined variable: collection' in /var/www/html/gossip/api/controllers/QuestionController.php:71
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/QuestionController.php(71): Slim\Slim::handleErrors(8, 'Undefined varia...', '/var/www/html/g...', 71, Array)
+#1 /var/www/html/gossip/api/index.php(379): QuestionController->add_answer(Object(MongoClient), 'a@b.com', '570d0267ed06b70...', 'asasa')
+#2 [internal function]: {closure}()
+#3 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#4 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#5 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#6 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#9 /var/www/html/gossip/api/index.php(561): Slim\Slim->run()
+#10 {main} 
+[ INFO  ][12 Apr 2016 8:04:40 PM Asia/Calcutta][Unknown][Line:393] Error in Creating New Answer for the Question 
+[ INFO  ][12 Apr 2016 8:08:29 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:08:29 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:08:29 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:08:29 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:08:29 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:08:29 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:08:29 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:08:29 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:08:29 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:08:29 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:08:29 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:08:29 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:08:37 PM Asia/Calcutta][Unknown][Line:373] Adding new answer to question : 570d0267ed06b7043f229b25 by user ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:08:37 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:08:37 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:08:37 PM Asia/Calcutta][Unknown][Line:53] Adding New answer by User ID : a@b.com to list question id : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:08:37 PM Asia/Calcutta][Unknown][Line:57] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:08:37 PM Asia/Calcutta][Unknown][Line:60] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:08:37 PM Asia/Calcutta][Unknown][Line:69] New Answer added successfully to question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:08:37 PM Asia/Calcutta][Unknown][Line:176] Creating New Notification for User ID : a@b.com
+, Question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:08:37 PM Asia/Calcutta][Unknown][Line:199] Exception occured in inserting new Document in the Notifications Collection : exception 'ErrorException' with message 'Undefined variable: conn' in /var/www/html/gossip/api/controllers/QuestionController.php:180
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/QuestionController.php(180): Slim\Slim::handleErrors(8, 'Undefined varia...', '/var/www/html/g...', 180, Array)
+#1 /var/www/html/gossip/api/controllers/QuestionController.php(75): QuestionController->persist_notification('570d0267ed06b70...', 'NEW_ANSWER_ADDE...', 'a@b.com?')
+#2 /var/www/html/gossip/api/index.php(379): QuestionController->add_answer(Object(MongoClient), 'a@b.com', '570d0267ed06b70...', 'fcfff')
+#3 [internal function]: {closure}()
+#4 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#6 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 /var/www/html/gossip/api/index.php(561): Slim\Slim->run()
+#11 {main} 
+[ INFO  ][12 Apr 2016 8:08:37 PM Asia/Calcutta][Unknown][Line:249] Sending Pusher Notification 
+[ INFO  ][12 Apr 2016 8:08:38 PM Asia/Calcutta][Unknown][Line:382] Answer Added Successfully ! 
+[ INFO  ][12 Apr 2016 8:12:05 PM Asia/Calcutta][Unknown][Line:226] Adding new watcher to question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:12:05 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:12:05 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:12:05 PM Asia/Calcutta][Unknown][Line:18] Adding User ID : a@b.com to list of watchers for question id : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:12:05 PM Asia/Calcutta][Unknown][Line:22] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:12:05 PM Asia/Calcutta][Unknown][Line:25] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:12:05 PM Asia/Calcutta][Unknown][Line:42] Exception occured in inserting new Document in the Questions Collection : exception 'ErrorException' with message 'MongoCollection::update() expects at least 2 parameters, 1 given' in /var/www/html/gossip/api/controllers/QuestionController.php:29
+Stack trace:
+#0 [internal function]: Slim\Slim::handleErrors(2, 'MongoCollection...', '/var/www/html/g...', 29, Array)
+#1 /var/www/html/gossip/api/controllers/QuestionController.php(29): MongoCollection->update(Array)
+#2 /var/www/html/gossip/api/index.php(232): QuestionController->watch_question(Object(MongoClient), 'a@b.com', '570d0267ed06b70...')
+#3 [internal function]: {closure}()
+#4 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#6 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 /var/www/html/gossip/api/index.php(561): Slim\Slim->run()
+#11 {main} 
+[ INFO  ][12 Apr 2016 8:12:05 PM Asia/Calcutta][Unknown][Line:246] Error in Creating New Watcher for the Question 
+[ INFO  ][12 Apr 2016 8:20:26 PM Asia/Calcutta][Unknown][Line:40] Creating New User Entry 
+[ INFO  ][12 Apr 2016 8:20:26 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:20:26 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:20:26 PM Asia/Calcutta][Unknown][Line:53] Creating New User with Email ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:20:26 PM Asia/Calcutta][Unknown][Line:58] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:20:26 PM Asia/Calcutta][Unknown][Line:61] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:20:26 PM Asia/Calcutta][Unknown][Line:70] New Documents inserted successfully into users collection 
+[ INFO  ][12 Apr 2016 8:20:26 PM Asia/Calcutta][Unknown][Line:49] User Created Successfully ! 
+[ INFO  ][12 Apr 2016 8:20:28 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:20:28 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:20:28 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:20:28 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:20:28 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:20:28 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:20:28 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:20:28 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:20:28 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:20:28 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:20:28 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:20:28 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:22:21 PM Asia/Calcutta][Unknown][Line:373] Adding new answer to question : 570d0267ed06b7043f229b25 by user ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:22:21 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:22:21 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:22:21 PM Asia/Calcutta][Unknown][Line:53] Adding New answer by User ID : shweta@wegilant.com to list question id : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:22:21 PM Asia/Calcutta][Unknown][Line:57] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:22:21 PM Asia/Calcutta][Unknown][Line:60] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:22:21 PM Asia/Calcutta][Unknown][Line:69] New Answer added successfully to question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:22:21 PM Asia/Calcutta][Unknown][Line:176] Creating New Notification for User ID : a@b.com
+, Question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:22:21 PM Asia/Calcutta][Unknown][Line:199] Exception occured in inserting new Document in the Notifications Collection : exception 'ErrorException' with message 'Undefined variable: conn' in /var/www/html/gossip/api/controllers/QuestionController.php:180
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/QuestionController.php(180): Slim\Slim::handleErrors(8, 'Undefined varia...', '/var/www/html/g...', 180, Array)
+#1 /var/www/html/gossip/api/controllers/QuestionController.php(75): QuestionController->persist_notification('570d0267ed06b70...', 'NEW_ANSWER_ADDE...', 'a@b.com?')
+#2 /var/www/html/gossip/api/index.php(379): QuestionController->add_answer(Object(MongoClient), 'shweta@wegilant...', '570d0267ed06b70...', 'ddfdfdfdfdfdfdf...')
+#3 [internal function]: {closure}()
+#4 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#6 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 /var/www/html/gossip/api/index.php(561): Slim\Slim->run()
+#11 {main} 
+[ INFO  ][12 Apr 2016 8:22:21 PM Asia/Calcutta][Unknown][Line:249] Sending Pusher Notification 
+[ INFO  ][12 Apr 2016 8:22:22 PM Asia/Calcutta][Unknown][Line:382] Answer Added Successfully ! 
+[ INFO  ][12 Apr 2016 8:23:18 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:23:18 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:23:18 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:23:18 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:23:18 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:23:18 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:23:18 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:23:18 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:23:18 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:23:18 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:23:18 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:23:18 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:23:40 PM Asia/Calcutta][Unknown][Line:373] Adding new answer to question : 570d0267ed06b7043f229b25 by user ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:23:40 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:23:40 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:23:40 PM Asia/Calcutta][Unknown][Line:53] Adding New answer by User ID : shweta@wegilant.com to list question id : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:23:40 PM Asia/Calcutta][Unknown][Line:57] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:23:40 PM Asia/Calcutta][Unknown][Line:60] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:23:40 PM Asia/Calcutta][Unknown][Line:69] New Answer added successfully to question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:23:40 PM Asia/Calcutta][Unknown][Line:176] Creating New Notification for User ID : a@b.com
+, Question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:23:40 PM Asia/Calcutta][Unknown][Line:199] Exception occured in inserting new Document in the Notifications Collection : exception 'ErrorException' with message 'Undefined variable: conn' in /var/www/html/gossip/api/controllers/QuestionController.php:180
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/QuestionController.php(180): Slim\Slim::handleErrors(8, 'Undefined varia...', '/var/www/html/g...', 180, Array)
+#1 /var/www/html/gossip/api/controllers/QuestionController.php(75): QuestionController->persist_notification('570d0267ed06b70...', 'NEW_ANSWER_ADDE...', 'a@b.com?')
+#2 /var/www/html/gossip/api/index.php(379): QuestionController->add_answer(Object(MongoClient), 'shweta@wegilant...', '570d0267ed06b70...', 'ddfdfdfdfdfdfdf...')
+#3 [internal function]: {closure}()
+#4 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#6 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 /var/www/html/gossip/api/index.php(561): Slim\Slim->run()
+#11 {main} 
+[ INFO  ][12 Apr 2016 8:23:40 PM Asia/Calcutta][Unknown][Line:249] Sending Pusher Notification 
+[ INFO  ][12 Apr 2016 8:23:41 PM Asia/Calcutta][Unknown][Line:382] Answer Added Successfully ! 
+[ INFO  ][12 Apr 2016 8:24:58 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:24:58 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:24:58 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:24:58 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:24:58 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:24:58 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:24:58 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:24:58 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:24:58 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:24:58 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:24:58 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:24:58 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:25:03 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:25:03 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:25:03 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:25:03 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:25:03 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:25:03 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:25:03 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:25:03 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:25:03 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:25:03 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:25:03 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:25:03 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:25:15 PM Asia/Calcutta][Unknown][Line:373] Adding new answer to question : 570d0267ed06b7043f229b25 by user ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:25:15 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:25:15 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:25:15 PM Asia/Calcutta][Unknown][Line:53] Adding New answer by User ID : shweta@wegilant.com to list question id : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:25:15 PM Asia/Calcutta][Unknown][Line:57] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:25:15 PM Asia/Calcutta][Unknown][Line:60] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:25:15 PM Asia/Calcutta][Unknown][Line:69] New Answer added successfully to question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:25:15 PM Asia/Calcutta][Unknown][Line:176] Creating New Notification for User ID : a@b.com
+, Question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:25:15 PM Asia/Calcutta][Unknown][Line:199] Exception occured in inserting new Document in the Notifications Collection : exception 'ErrorException' with message 'Undefined variable: conn' in /var/www/html/gossip/api/controllers/QuestionController.php:180
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/QuestionController.php(180): Slim\Slim::handleErrors(8, 'Undefined varia...', '/var/www/html/g...', 180, Array)
+#1 /var/www/html/gossip/api/controllers/QuestionController.php(75): QuestionController->persist_notification('570d0267ed06b70...', 'NEW_ANSWER_ADDE...', 'a@b.com?')
+#2 /var/www/html/gossip/api/index.php(379): QuestionController->add_answer(Object(MongoClient), 'shweta@wegilant...', '570d0267ed06b70...', 'test answer')
+#3 [internal function]: {closure}()
+#4 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#6 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 /var/www/html/gossip/api/index.php(561): Slim\Slim->run()
+#11 {main} 
+[ INFO  ][12 Apr 2016 8:25:15 PM Asia/Calcutta][Unknown][Line:249] Sending Pusher Notification 
+[ INFO  ][12 Apr 2016 8:25:15 PM Asia/Calcutta][Unknown][Line:382] Answer Added Successfully ! 
+[ INFO  ][12 Apr 2016 8:26:03 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:26:03 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:26:03 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:26:03 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:26:03 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:26:03 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:26:03 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:26:03 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:26:03 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:26:03 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:26:03 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:26:03 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:26:08 PM Asia/Calcutta][Unknown][Line:373] Adding new answer to question : 570d0267ed06b7043f229b25 by user ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:26:08 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:26:08 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:26:08 PM Asia/Calcutta][Unknown][Line:53] Adding New answer by User ID : shweta@wegilant.com to list question id : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:26:08 PM Asia/Calcutta][Unknown][Line:57] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:26:08 PM Asia/Calcutta][Unknown][Line:60] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:26:08 PM Asia/Calcutta][Unknown][Line:69] New Answer added successfully to question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:26:08 PM Asia/Calcutta][Unknown][Line:176] Creating New Notification for User ID : a@b.com
+, Question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:26:08 PM Asia/Calcutta][Unknown][Line:199] Exception occured in inserting new Document in the Notifications Collection : exception 'ErrorException' with message 'Undefined variable: conn' in /var/www/html/gossip/api/controllers/QuestionController.php:180
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/QuestionController.php(180): Slim\Slim::handleErrors(8, 'Undefined varia...', '/var/www/html/g...', 180, Array)
+#1 /var/www/html/gossip/api/controllers/QuestionController.php(75): QuestionController->persist_notification('570d0267ed06b70...', 'NEW_ANSWER_ADDE...', 'a@b.com?')
+#2 /var/www/html/gossip/api/index.php(379): QuestionController->add_answer(Object(MongoClient), 'shweta@wegilant...', '570d0267ed06b70...', 'test answer 232...')
+#3 [internal function]: {closure}()
+#4 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#6 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 /var/www/html/gossip/api/index.php(561): Slim\Slim->run()
+#11 {main} 
+[ INFO  ][12 Apr 2016 8:26:08 PM Asia/Calcutta][Unknown][Line:249] Sending Pusher Notification 
+[ INFO  ][12 Apr 2016 8:26:09 PM Asia/Calcutta][Unknown][Line:382] Answer Added Successfully ! 
+[ INFO  ][12 Apr 2016 8:37:39 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:37:39 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:37:39 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:37:39 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:37:39 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:37:39 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:37:39 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:37:39 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:37:39 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:37:39 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:37:39 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:37:39 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:37:51 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:37:51 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:37:51 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:37:51 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:37:51 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:37:51 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:37:51 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:37:51 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:37:51 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:37:51 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:37:51 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:37:51 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:38:01 PM Asia/Calcutta][Unknown][Line:373] Adding new answer to question : 570d0267ed06b7043f229b25 by user ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:38:01 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:38:01 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:38:01 PM Asia/Calcutta][Unknown][Line:53] Adding New answer by User ID : shweta@wegilant.com to list question id : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:38:01 PM Asia/Calcutta][Unknown][Line:57] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:38:01 PM Asia/Calcutta][Unknown][Line:60] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:38:01 PM Asia/Calcutta][Unknown][Line:69] New Answer added successfully to question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:38:01 PM Asia/Calcutta][Unknown][Line:176] Creating New Notification for User ID : a@b.com
+, Question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:38:01 PM Asia/Calcutta][Unknown][Line:199] Exception occured in inserting new Document in the Notifications Collection : exception 'ErrorException' with message 'Undefined variable: conn' in /var/www/html/gossip/api/controllers/QuestionController.php:180
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/QuestionController.php(180): Slim\Slim::handleErrors(8, 'Undefined varia...', '/var/www/html/g...', 180, Array)
+#1 /var/www/html/gossip/api/controllers/QuestionController.php(75): QuestionController->persist_notification('570d0267ed06b70...', 'NEW_ANSWER_ADDE...', 'a@b.com?')
+#2 /var/www/html/gossip/api/index.php(379): QuestionController->add_answer(Object(MongoClient), 'shweta@wegilant...', '570d0267ed06b70...', 'new answer')
+#3 [internal function]: {closure}()
+#4 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#6 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 /var/www/html/gossip/api/index.php(561): Slim\Slim->run()
+#11 {main} 
+[ INFO  ][12 Apr 2016 8:38:01 PM Asia/Calcutta][Unknown][Line:249] Sending Pusher Notification 
+[ INFO  ][12 Apr 2016 8:38:02 PM Asia/Calcutta][Unknown][Line:382] Answer Added Successfully ! 
+[ INFO  ][12 Apr 2016 8:40:13 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:40:13 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:40:13 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:40:13 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:40:13 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:40:13 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:40:13 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:40:13 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:40:13 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:40:13 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:40:13 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:40:13 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:46:28 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:46:28 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:46:28 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:46:28 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:46:28 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:46:28 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:46:28 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:46:28 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:46:28 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:46:28 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:46:28 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:46:28 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:46:39 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:46:39 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:46:39 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:46:39 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:46:39 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:46:39 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:46:39 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:46:39 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:46:39 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:46:39 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:46:39 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:46:39 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:46:46 PM Asia/Calcutta][Unknown][Line:373] Adding new answer to question : 570d0267ed06b7043f229b25 by user ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:46:46 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:46:46 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:46:46 PM Asia/Calcutta][Unknown][Line:53] Adding New answer by User ID : shweta@wegilant.com to list question id : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:46:46 PM Asia/Calcutta][Unknown][Line:57] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:46:46 PM Asia/Calcutta][Unknown][Line:60] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:46:46 PM Asia/Calcutta][Unknown][Line:69] New Answer added successfully to question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:46:46 PM Asia/Calcutta][Unknown][Line:176] Creating New Notification for User ID : a@b.com
+, Question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:46:46 PM Asia/Calcutta][Unknown][Line:199] Exception occured in inserting new Document in the Notifications Collection : exception 'ErrorException' with message 'Undefined variable: conn' in /var/www/html/gossip/api/controllers/QuestionController.php:180
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/QuestionController.php(180): Slim\Slim::handleErrors(8, 'Undefined varia...', '/var/www/html/g...', 180, Array)
+#1 /var/www/html/gossip/api/controllers/QuestionController.php(75): QuestionController->persist_notification('570d0267ed06b70...', 'NEW_ANSWER_ADDE...', 'a@b.com?')
+#2 /var/www/html/gossip/api/index.php(379): QuestionController->add_answer(Object(MongoClient), 'shweta@wegilant...', '570d0267ed06b70...', 'new new')
+#3 [internal function]: {closure}()
+#4 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#6 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 /var/www/html/gossip/api/index.php(561): Slim\Slim->run()
+#11 {main} 
+[ INFO  ][12 Apr 2016 8:46:46 PM Asia/Calcutta][Unknown][Line:249] Sending Pusher Notification 
+[ INFO  ][12 Apr 2016 8:46:47 PM Asia/Calcutta][Unknown][Line:382] Answer Added Successfully ! 
+[ INFO  ][12 Apr 2016 8:48:38 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:48:38 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:48:38 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:48:38 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:48:38 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:48:38 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:48:38 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:48:38 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:48:38 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:48:38 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:48:38 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:48:38 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:48:44 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:48:44 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:48:44 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:48:44 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:48:44 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:48:44 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:48:44 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:48:44 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:48:44 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:48:44 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:48:44 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:48:44 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:48:51 PM Asia/Calcutta][Unknown][Line:373] Adding new answer to question : 570d0267ed06b7043f229b25 by user ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:48:51 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:48:51 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:48:51 PM Asia/Calcutta][Unknown][Line:53] Adding New answer by User ID : shweta@wegilant.com to list question id : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:48:51 PM Asia/Calcutta][Unknown][Line:57] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:48:51 PM Asia/Calcutta][Unknown][Line:60] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:48:51 PM Asia/Calcutta][Unknown][Line:69] New Answer added successfully to question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:48:51 PM Asia/Calcutta][Unknown][Line:176] Creating New Notification for User ID : a@b.com
+, Question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:48:51 PM Asia/Calcutta][Unknown][Line:199] Exception occured in inserting new Document in the Notifications Collection : exception 'ErrorException' with message 'Undefined variable: conn' in /var/www/html/gossip/api/controllers/QuestionController.php:180
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/QuestionController.php(180): Slim\Slim::handleErrors(8, 'Undefined varia...', '/var/www/html/g...', 180, Array)
+#1 /var/www/html/gossip/api/controllers/QuestionController.php(75): QuestionController->persist_notification('570d0267ed06b70...', 'NEW_ANSWER_ADDE...', 'a@b.com?')
+#2 /var/www/html/gossip/api/index.php(379): QuestionController->add_answer(Object(MongoClient), 'shweta@wegilant...', '570d0267ed06b70...', 'mofo')
+#3 [internal function]: {closure}()
+#4 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#6 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 /var/www/html/gossip/api/index.php(561): Slim\Slim->run()
+#11 {main} 
+[ INFO  ][12 Apr 2016 8:48:51 PM Asia/Calcutta][Unknown][Line:249] Sending Pusher Notification 
+[ INFO  ][12 Apr 2016 8:48:51 PM Asia/Calcutta][Unknown][Line:382] Answer Added Successfully ! 
+[ INFO  ][12 Apr 2016 8:49:02 PM Asia/Calcutta][Unknown][Line:373] Adding new answer to question : 570d0267ed06b7043f229b25 by user ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:49:02 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:49:02 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:49:02 PM Asia/Calcutta][Unknown][Line:53] Adding New answer by User ID : shweta@wegilant.com to list question id : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:49:02 PM Asia/Calcutta][Unknown][Line:57] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:49:02 PM Asia/Calcutta][Unknown][Line:60] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:49:02 PM Asia/Calcutta][Unknown][Line:69] New Answer added successfully to question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:49:02 PM Asia/Calcutta][Unknown][Line:176] Creating New Notification for User ID : a@b.com
+, Question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:49:02 PM Asia/Calcutta][Unknown][Line:199] Exception occured in inserting new Document in the Notifications Collection : exception 'ErrorException' with message 'Undefined variable: conn' in /var/www/html/gossip/api/controllers/QuestionController.php:180
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/QuestionController.php(180): Slim\Slim::handleErrors(8, 'Undefined varia...', '/var/www/html/g...', 180, Array)
+#1 /var/www/html/gossip/api/controllers/QuestionController.php(75): QuestionController->persist_notification('570d0267ed06b70...', 'NEW_ANSWER_ADDE...', 'a@b.com?')
+#2 /var/www/html/gossip/api/index.php(379): QuestionController->add_answer(Object(MongoClient), 'shweta@wegilant...', '570d0267ed06b70...', 'mofo yolo')
+#3 [internal function]: {closure}()
+#4 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#6 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 /var/www/html/gossip/api/index.php(561): Slim\Slim->run()
+#11 {main} 
+[ INFO  ][12 Apr 2016 8:49:02 PM Asia/Calcutta][Unknown][Line:249] Sending Pusher Notification 
+[ INFO  ][12 Apr 2016 8:49:03 PM Asia/Calcutta][Unknown][Line:382] Answer Added Successfully ! 
+[ INFO  ][12 Apr 2016 8:50:41 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:50:41 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:50:41 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:50:41 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:50:41 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:50:41 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:50:41 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:50:41 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:50:41 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:50:41 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:50:41 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:50:41 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:51:34 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:51:34 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:51:34 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:51:34 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:51:34 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:51:34 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:51:34 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:51:34 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:51:34 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:51:34 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:51:34 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:51:34 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:51:43 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:51:43 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:51:43 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:51:43 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:51:43 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:51:43 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:51:43 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:51:43 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:51:43 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:51:43 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:51:43 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:51:43 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:52:23 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:52:23 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:52:23 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:52:23 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:52:23 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:52:23 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:52:23 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:52:23 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:52:23 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:52:23 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:52:23 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:52:23 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:52:34 PM Asia/Calcutta][Unknown][Line:373] Adding new answer to question : 570d0267ed06b7043f229b25 by user ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:52:34 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:52:34 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:52:34 PM Asia/Calcutta][Unknown][Line:53] Adding New answer by User ID : shweta@wegilant.com to list question id : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:52:34 PM Asia/Calcutta][Unknown][Line:57] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:52:34 PM Asia/Calcutta][Unknown][Line:60] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:52:34 PM Asia/Calcutta][Unknown][Line:69] New Answer added successfully to question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:52:34 PM Asia/Calcutta][Unknown][Line:176] Creating New Notification for User ID : a@b.com
+, Question : 570d0267ed06b7043f229b25 
+[ INFO  ][12 Apr 2016 8:52:34 PM Asia/Calcutta][Unknown][Line:199] Exception occured in inserting new Document in the Notifications Collection : exception 'ErrorException' with message 'Undefined variable: conn' in /var/www/html/gossip/api/controllers/QuestionController.php:180
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/QuestionController.php(180): Slim\Slim::handleErrors(8, 'Undefined varia...', '/var/www/html/g...', 180, Array)
+#1 /var/www/html/gossip/api/controllers/QuestionController.php(75): QuestionController->persist_notification('570d0267ed06b70...', 'NEW_ANSWER_ADDE...', 'a@b.com?')
+#2 /var/www/html/gossip/api/index.php(379): QuestionController->add_answer(Object(MongoClient), 'shweta@wegilant...', '570d0267ed06b70...', 'new new')
+#3 [internal function]: {closure}()
+#4 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#6 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 /var/www/html/gossip/api/index.php(561): Slim\Slim->run()
+#11 {main} 
+[ INFO  ][12 Apr 2016 8:52:34 PM Asia/Calcutta][Unknown][Line:249] Sending Pusher Notification 
+[ INFO  ][12 Apr 2016 8:52:35 PM Asia/Calcutta][Unknown][Line:382] Answer Added Successfully ! 
+[ INFO  ][12 Apr 2016 8:53:14 PM Asia/Calcutta][Unknown][Line:163] Creating New Question Entry 
+[ INFO  ][12 Apr 2016 8:53:14 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:53:14 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:53:14 PM Asia/Calcutta][Unknown][Line:115] Creating New Question for User ID : shweta@wegilant.com, Question : dfd f df df d fdf ?, category : Test 
+[ INFO  ][12 Apr 2016 8:53:14 PM Asia/Calcutta][Unknown][Line:120] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:53:14 PM Asia/Calcutta][Unknown][Line:123] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:53:14 PM Asia/Calcutta][Unknown][Line:138] New Documents inserted successfully into questions collection 
+[ INFO  ][12 Apr 2016 8:53:14 PM Asia/Calcutta][Unknown][Line:172] Question Added Successfully ! 
+[ INFO  ][12 Apr 2016 8:53:15 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:53:15 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:53:15 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:53:15 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:53:15 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:53:15 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:53:15 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:53:15 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:53:15 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:53:15 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:53:15 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:53:15 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:53:19 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:53:19 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:53:19 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:53:19 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:53:19 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:53:19 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:53:19 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:53:19 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:53:19 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:53:19 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:53:19 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:53:19 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:53:27 PM Asia/Calcutta][Unknown][Line:373] Adding new answer to question : 570d12e2ed06b73a53229b26 by user ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:53:27 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:53:27 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:53:27 PM Asia/Calcutta][Unknown][Line:53] Adding New answer by User ID : a@b.com to list question id : 570d12e2ed06b73a53229b26 
+[ INFO  ][12 Apr 2016 8:53:27 PM Asia/Calcutta][Unknown][Line:57] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:53:27 PM Asia/Calcutta][Unknown][Line:60] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:53:27 PM Asia/Calcutta][Unknown][Line:69] New Answer added successfully to question : 570d12e2ed06b73a53229b26 
+[ INFO  ][12 Apr 2016 8:53:27 PM Asia/Calcutta][Unknown][Line:176] Creating New Notification for User ID : shweta@wegilant.com
+, Question : 570d12e2ed06b73a53229b26 
+[ INFO  ][12 Apr 2016 8:53:27 PM Asia/Calcutta][Unknown][Line:199] Exception occured in inserting new Document in the Notifications Collection : exception 'ErrorException' with message 'Undefined variable: conn' in /var/www/html/gossip/api/controllers/QuestionController.php:180
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/QuestionController.php(180): Slim\Slim::handleErrors(8, 'Undefined varia...', '/var/www/html/g...', 180, Array)
+#1 /var/www/html/gossip/api/controllers/QuestionController.php(75): QuestionController->persist_notification('570d12e2ed06b73...', 'NEW_ANSWER_ADDE...', 'shweta@wegilant...')
+#2 /var/www/html/gossip/api/index.php(379): QuestionController->add_answer(Object(MongoClient), 'a@b.com', '570d12e2ed06b73...', 'kjkjkjdkjkjd')
+#3 [internal function]: {closure}()
+#4 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#6 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 /var/www/html/gossip/api/index.php(561): Slim\Slim->run()
+#11 {main} 
+[ INFO  ][12 Apr 2016 8:53:27 PM Asia/Calcutta][Unknown][Line:249] Sending Pusher Notification 
+[ INFO  ][12 Apr 2016 8:53:28 PM Asia/Calcutta][Unknown][Line:382] Answer Added Successfully ! 
+[ INFO  ][12 Apr 2016 8:54:57 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:54:57 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:54:57 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:54:57 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:54:57 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:54:57 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:54:57 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:54:57 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:54:57 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:54:57 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:54:57 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:54:57 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:55:52 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:55:52 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:55:52 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:55:52 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:55:52 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:55:52 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:55:52 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:55:52 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:55:52 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:55:52 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:55:52 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:55:52 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:56:14 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:56:14 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:56:14 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:56:14 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:56:14 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:56:14 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:56:14 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:56:14 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:56:14 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:56:14 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:56:14 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:56:14 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:56:25 PM Asia/Calcutta][Unknown][Line:373] Adding new answer to question : 570d12e2ed06b73a53229b26 by user ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:56:25 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:56:25 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:56:25 PM Asia/Calcutta][Unknown][Line:53] Adding New answer by User ID : a@b.com to list question id : 570d12e2ed06b73a53229b26 
+[ INFO  ][12 Apr 2016 8:56:25 PM Asia/Calcutta][Unknown][Line:57] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:56:25 PM Asia/Calcutta][Unknown][Line:60] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:56:25 PM Asia/Calcutta][Unknown][Line:69] New Answer added successfully to question : 570d12e2ed06b73a53229b26 
+[ INFO  ][12 Apr 2016 8:56:25 PM Asia/Calcutta][Unknown][Line:176] Creating New Notification for User ID : shweta@wegilant.com
+, Question : 570d12e2ed06b73a53229b26 
+[ INFO  ][12 Apr 2016 8:56:25 PM Asia/Calcutta][Unknown][Line:199] Exception occured in inserting new Document in the Notifications Collection : exception 'ErrorException' with message 'Undefined variable: conn' in /var/www/html/gossip/api/controllers/QuestionController.php:180
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/QuestionController.php(180): Slim\Slim::handleErrors(8, 'Undefined varia...', '/var/www/html/g...', 180, Array)
+#1 /var/www/html/gossip/api/controllers/QuestionController.php(75): QuestionController->persist_notification('570d12e2ed06b73...', 'NEW_ANSWER_ADDE...', 'shweta@wegilant...')
+#2 /var/www/html/gossip/api/index.php(379): QuestionController->add_answer(Object(MongoClient), 'a@b.com', '570d12e2ed06b73...', 'fffff')
+#3 [internal function]: {closure}()
+#4 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#6 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 /var/www/html/gossip/api/index.php(561): Slim\Slim->run()
+#11 {main} 
+[ INFO  ][12 Apr 2016 8:56:25 PM Asia/Calcutta][Unknown][Line:249] Sending Pusher Notification 
+[ INFO  ][12 Apr 2016 8:56:26 PM Asia/Calcutta][Unknown][Line:382] Answer Added Successfully ! 
+[ INFO  ][12 Apr 2016 8:56:43 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:56:43 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:56:43 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:56:43 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:56:43 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:56:43 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:56:43 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:56:43 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:56:43 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:56:43 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:56:43 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:56:43 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:57:16 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:57:16 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:57:16 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:57:16 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:57:16 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:57:16 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:57:16 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:57:16 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:57:16 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:57:16 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:57:16 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:57:16 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:57:21 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:57:21 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:57:21 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:57:21 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:57:21 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:57:21 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:57:21 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:57:21 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:57:21 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:57:21 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:57:21 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:57:21 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:59:01 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:59:01 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:59:01 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:59:01 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:59:01 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:59:01 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:59:01 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:59:01 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:59:01 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:59:01 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:59:01 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:59:01 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:59:02 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 8:59:02 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:59:02 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:59:02 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 8:59:02 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:59:02 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 8:59:02 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 8:59:02 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 8:59:02 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 8:59:02 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:59:02 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:59:02 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 8:59:09 PM Asia/Calcutta][Unknown][Line:373] Adding new answer to question : 570d12e2ed06b73a53229b26 by user ID : a@b.com 
+[ INFO  ][12 Apr 2016 8:59:09 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 8:59:09 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 8:59:09 PM Asia/Calcutta][Unknown][Line:53] Adding New answer by User ID : a@b.com to list question id : 570d12e2ed06b73a53229b26 
+[ INFO  ][12 Apr 2016 8:59:09 PM Asia/Calcutta][Unknown][Line:57] Database Selected ---  
+[ INFO  ][12 Apr 2016 8:59:09 PM Asia/Calcutta][Unknown][Line:60] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 8:59:09 PM Asia/Calcutta][Unknown][Line:69] New Answer added successfully to question : 570d12e2ed06b73a53229b26 
+[ INFO  ][12 Apr 2016 8:59:09 PM Asia/Calcutta][Unknown][Line:176] Creating New Notification for User ID : shweta@wegilant.com
+, Question : 570d12e2ed06b73a53229b26 
+[ INFO  ][12 Apr 2016 8:59:09 PM Asia/Calcutta][Unknown][Line:199] Exception occured in inserting new Document in the Notifications Collection : exception 'ErrorException' with message 'Undefined variable: conn' in /var/www/html/gossip/api/controllers/QuestionController.php:180
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/QuestionController.php(180): Slim\Slim::handleErrors(8, 'Undefined varia...', '/var/www/html/g...', 180, Array)
+#1 /var/www/html/gossip/api/controllers/QuestionController.php(75): QuestionController->persist_notification('570d12e2ed06b73...', 'NEW_ANSWER_ADDE...', 'shweta@wegilant...')
+#2 /var/www/html/gossip/api/index.php(379): QuestionController->add_answer(Object(MongoClient), 'a@b.com', '570d12e2ed06b73...', 'ffff')
+#3 [internal function]: {closure}()
+#4 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#6 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 /var/www/html/gossip/api/index.php(561): Slim\Slim->run()
+#11 {main} 
+[ INFO  ][12 Apr 2016 8:59:09 PM Asia/Calcutta][Unknown][Line:249] Sending Pusher Notification 
+[ INFO  ][12 Apr 2016 8:59:10 PM Asia/Calcutta][Unknown][Line:382] Answer Added Successfully ! 
+[ INFO  ][12 Apr 2016 9:03:37 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 9:03:37 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 9:03:37 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 9:03:37 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 9:03:37 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:03:37 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 9:03:37 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 9:03:37 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 9:03:37 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 9:03:37 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:03:37 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 9:03:37 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 9:03:38 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 9:03:38 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 9:03:38 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 9:03:38 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 9:03:38 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:03:38 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 9:03:38 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 9:03:38 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 9:03:38 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 9:03:38 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:03:38 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 9:03:38 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 9:03:47 PM Asia/Calcutta][Unknown][Line:373] Adding new answer to question : 570d12e2ed06b73a53229b26 by user ID : a@b.com 
+[ INFO  ][12 Apr 2016 9:03:47 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 9:03:47 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 9:03:47 PM Asia/Calcutta][Unknown][Line:53] Adding New answer by User ID : a@b.com to list question id : 570d12e2ed06b73a53229b26 
+[ INFO  ][12 Apr 2016 9:03:47 PM Asia/Calcutta][Unknown][Line:57] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:03:47 PM Asia/Calcutta][Unknown][Line:60] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 9:03:47 PM Asia/Calcutta][Unknown][Line:69] New Answer added successfully to question : 570d12e2ed06b73a53229b26 
+[ INFO  ][12 Apr 2016 9:03:47 PM Asia/Calcutta][Unknown][Line:176] Creating New Notification for User ID : shweta@wegilant.com
+, Question : 570d12e2ed06b73a53229b26 
+[ INFO  ][12 Apr 2016 9:03:47 PM Asia/Calcutta][Unknown][Line:199] Exception occured in inserting new Document in the Notifications Collection : exception 'ErrorException' with message 'Undefined variable: conn' in /var/www/html/gossip/api/controllers/QuestionController.php:180
+Stack trace:
+#0 /var/www/html/gossip/api/controllers/QuestionController.php(180): Slim\Slim::handleErrors(8, 'Undefined varia...', '/var/www/html/g...', 180, Array)
+#1 /var/www/html/gossip/api/controllers/QuestionController.php(75): QuestionController->persist_notification('570d12e2ed06b73...', 'NEW_ANSWER_ADDE...', 'shweta@wegilant...')
+#2 /var/www/html/gossip/api/index.php(379): QuestionController->add_answer(Object(MongoClient), 'a@b.com', '570d12e2ed06b73...', 'hhhhghgh')
+#3 [internal function]: {closure}()
+#4 /var/www/html/gossip/api/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 /var/www/html/gossip/api/Slim/Slim.php(1357): Slim\Route->dispatch()
+#6 /var/www/html/gossip/api/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /var/www/html/gossip/api/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /var/www/html/gossip/api/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 /var/www/html/gossip/api/Slim/Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 /var/www/html/gossip/api/index.php(561): Slim\Slim->run()
+#11 {main} 
+[ INFO  ][12 Apr 2016 9:03:47 PM Asia/Calcutta][Unknown][Line:249] Sending Pusher Notification 
+[ INFO  ][12 Apr 2016 9:03:48 PM Asia/Calcutta][Unknown][Line:382] Answer Added Successfully ! 
+[ INFO  ][12 Apr 2016 9:12:47 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 9:12:47 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 9:12:47 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 9:12:47 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 9:12:47 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:12:47 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 9:12:47 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 9:12:47 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 9:12:47 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 9:12:47 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:12:47 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 9:12:47 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 9:12:53 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 9:12:53 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 9:12:53 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 9:12:53 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 9:12:53 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:12:53 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 9:12:53 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 9:12:53 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 9:12:53 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 9:12:53 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:12:53 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 9:12:53 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 9:14:27 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 9:14:27 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 9:14:27 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 9:14:27 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 9:14:27 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:14:27 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 9:14:27 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 9:14:27 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 9:14:27 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 9:14:27 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:14:27 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 9:14:27 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 9:14:36 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 9:14:36 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 9:14:36 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 9:14:36 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 9:14:36 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:14:36 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 9:14:36 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 9:14:36 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 9:14:36 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 9:14:36 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:14:36 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 9:14:36 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 9:15:15 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 9:15:15 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 9:15:15 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 9:15:15 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 9:15:15 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:15:15 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 9:15:15 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 9:15:15 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 9:15:15 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 9:15:15 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:15:15 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 9:15:15 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 9:19:50 PM Asia/Calcutta][Unknown][Line:99] Logging in User.. 
+[ INFO  ][12 Apr 2016 9:19:50 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 9:19:50 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 9:19:50 PM Asia/Calcutta][Unknown][Line:85] Logging In User with Email ID : a@b.com 
+[ INFO  ][12 Apr 2016 9:19:50 PM Asia/Calcutta][Unknown][Line:89] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:19:50 PM Asia/Calcutta][Unknown][Line:92] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 9:19:50 PM Asia/Calcutta][Unknown][Line:99] Successfully found User Record 
+[ INFO  ][12 Apr 2016 9:19:50 PM Asia/Calcutta][Unknown][Line:108] User Logged In Successfully ! 
+[ INFO  ][12 Apr 2016 9:21:20 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 9:21:20 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 9:21:20 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 9:21:20 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : shweta@wegilant.com 
+[ INFO  ][12 Apr 2016 9:21:20 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:21:20 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 9:21:20 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 9:21:20 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 9:21:20 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 9:21:20 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:21:20 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 9:21:20 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 9:21:31 PM Asia/Calcutta][Unknown][Line:99] Logging in User.. 
+[ INFO  ][12 Apr 2016 9:21:31 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 9:21:31 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 9:21:31 PM Asia/Calcutta][Unknown][Line:85] Logging In User with Email ID : a@b.com 
+[ INFO  ][12 Apr 2016 9:21:31 PM Asia/Calcutta][Unknown][Line:89] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:21:31 PM Asia/Calcutta][Unknown][Line:92] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 9:21:31 PM Asia/Calcutta][Unknown][Line:99] Successfully found User Record 
+[ INFO  ][12 Apr 2016 9:21:31 PM Asia/Calcutta][Unknown][Line:108] User Logged In Successfully ! 
+[ INFO  ][12 Apr 2016 9:21:32 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 9:21:32 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 9:21:32 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 9:21:32 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 9:21:32 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:21:32 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 9:21:32 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 9:21:32 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 9:21:32 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 9:21:32 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:21:32 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 9:21:32 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 9:21:58 PM Asia/Calcutta][Unknown][Line:99] Logging in User.. 
+[ INFO  ][12 Apr 2016 9:21:58 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 9:21:58 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 9:21:58 PM Asia/Calcutta][Unknown][Line:85] Logging In User with Email ID : a@b.com 
+[ INFO  ][12 Apr 2016 9:21:58 PM Asia/Calcutta][Unknown][Line:89] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:21:58 PM Asia/Calcutta][Unknown][Line:92] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 9:21:58 PM Asia/Calcutta][Unknown][Line:99] Successfully found User Record 
+[ INFO  ][12 Apr 2016 9:21:58 PM Asia/Calcutta][Unknown][Line:108] User Logged In Successfully ! 
+[ INFO  ][12 Apr 2016 9:22:00 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 9:22:00 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 9:22:00 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 9:22:00 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 9:22:00 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:22:00 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 9:22:00 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 9:22:00 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 9:22:00 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 9:22:00 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:22:00 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 9:22:00 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 
+[ INFO  ][12 Apr 2016 9:22:10 PM Asia/Calcutta][Unknown][Line:99] Logging in User.. 
+[ INFO  ][12 Apr 2016 9:22:10 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 9:22:10 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 9:22:10 PM Asia/Calcutta][Unknown][Line:85] Logging In User with Email ID : a@b.com 
+[ INFO  ][12 Apr 2016 9:22:10 PM Asia/Calcutta][Unknown][Line:89] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:22:10 PM Asia/Calcutta][Unknown][Line:92] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 9:22:10 PM Asia/Calcutta][Unknown][Line:99] Successfully found User Record 
+[ INFO  ][12 Apr 2016 9:22:10 PM Asia/Calcutta][Unknown][Line:108] User Logged In Successfully ! 
+[ INFO  ][12 Apr 2016 9:22:11 PM Asia/Calcutta][Unknown][Line:289] Getting All Questions List 
+[ INFO  ][12 Apr 2016 9:22:11 PM Asia/Calcutta][Unknown][Line:34] Connection to database successfully... 
+[ INFO  ][12 Apr 2016 9:22:11 PM Asia/Calcutta][Unknown][Line:39] Database mydb selected... 
+[ INFO  ][12 Apr 2016 9:22:11 PM Asia/Calcutta][Unknown][Line:17] Validating User ID : a@b.com 
+[ INFO  ][12 Apr 2016 9:22:11 PM Asia/Calcutta][Unknown][Line:21] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:22:11 PM Asia/Calcutta][Unknown][Line:24] Collection Users Selected Successfully 
+[ INFO  ][12 Apr 2016 9:22:11 PM Asia/Calcutta][Unknown][Line:32] User Matching Record found successfully in users collection 
+[ INFO  ][12 Apr 2016 9:22:11 PM Asia/Calcutta][Unknown][Line:298] User ID validated. Record Found ! 
+[ INFO  ][12 Apr 2016 9:22:11 PM Asia/Calcutta][Unknown][Line:133] Fetching Questions List 
+[ INFO  ][12 Apr 2016 9:22:11 PM Asia/Calcutta][Unknown][Line:137] Database Selected ---  
+[ INFO  ][12 Apr 2016 9:22:11 PM Asia/Calcutta][Unknown][Line:140] Collection Questions Selected Successfully 
+[ INFO  ][12 Apr 2016 9:22:11 PM Asia/Calcutta][Unknown][Line:321] Got all questions ! 

@@ -81,6 +81,35 @@
 
 		}
 
+		function login_user( $conn, $email_id ){
+			$this->log->info("Logging In User with Email ID : ".$email_id);
+
+			try{
+				$db = $conn->mydb;
+				$this->log->info("Database Selected --- ");
+
+				$users_collection = $db->createCollection("users");
+			    $this->log->info("Collection Users Selected Successfully");
+
+			   	$user_record = array( 
+	        		"email_id" => $email_id 
+	    		);
+		
+			    $users_collection->findOne($user_record);
+			    $this->log->info("Successfully found User Record");	
+
+				$responseObj = array('status' => true    
+				);
+
+			}catch(Exception $e){
+			    $this->log->info("Exception occured in finding user record : ".$e);	
+				$responseObj = array('status' => false
+    			);	
+			}
+			
+			return $responseObj;
+		}
+
 		function create_new_question( $conn, $user_id, $question_text, $category ){
 
 			$this->log->info("Creating New Question for User ID : ".$user_id.", Question : ".$question_text.", category : ".$category);
